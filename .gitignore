@@ -1,0 +1,42 @@
+# Byte-compiled / cache files
+**/__pycache__/
+**/*.py[cod]
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Egg info
+*.egg-info/
+dist/
+build/
+
+# Python packaging
+*.egg
+*.manifest
+*.spec
+
+# Jupyter (if used)
+.ipynb_checkpoints/
+
+# Test/coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+.cache/
+.mypy_cache/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore PNG files
+*.png
