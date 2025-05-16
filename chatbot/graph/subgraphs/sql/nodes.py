@@ -3,20 +3,19 @@ from typing import Annotated, Any
 from langchain_core.runnables import RunnableWithFallbacks
 from typing_extensions import TypedDict
 from langchain_core.messages import AIMessage, ToolMessage
-from tools.utils import create_tool_node_with_fallback
-from tools.sql_tools import (
+from chatbot.tools.utils import create_tool_node_with_fallback
+from chatbot.tools.sql import (
     list_sql_database_tool,
     info_sql_database_tool,
     query_sql_database_tool,
 )
-from agents.sql_agents import (
+from chatbot.agents.sql import (
     get_query_checker,
     get_schema_model,
     get_query_gen
 )
 
-class State(TypedDict):
-    messages: Annotated[list[AnyMessage], add_messages]
+from chatbot.schemas.schemas import BaseState as State
 
 def create_list_tables_tool_node() -> RunnableWithFallbacks[Any, dict]:
     return create_tool_node_with_fallback([list_sql_database_tool])

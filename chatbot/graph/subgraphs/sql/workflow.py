@@ -1,4 +1,4 @@
-from graph.sql_subgraph.sql_nodes import (
+from chatbot.graph.subgraphs.sql.nodes import (
     create_list_tables_tool_node,
     create_info_table_tool_node,
     create_query_executor_tool_node,
@@ -8,23 +8,8 @@ from graph.sql_subgraph.sql_nodes import (
     check_query_node
 )
 from langgraph.graph import END, StateGraph, START
-from typing import Annotated, Literal
-from langgraph.graph.message import AnyMessage, add_messages
-from typing_extensions import TypedDict
-
-class State(TypedDict):
-    messages: Annotated[list[AnyMessage], add_messages]
-
-def router(state: State) -> Literal[END, "check_query_agent", "query_gen_agent"]:
-    messages = state["messages"]
-    last_message = messages[-1]
-    # If there is a tool call, then we finish
-    if getattr(last_message, "tool_calls", None):
-        return END
-    if last_message.content.startswith("Error:"):
-        return "query_gen_agent"
-    else:
-        return "check_query_agent"
+from chatbot.schemas.schemas import BaseState as State
+from chatbot.graph.subgraphs.sql.utils import router
 
 def create_sql_graph():
 
@@ -45,22 +30,12 @@ def create_sql_graph():
     sql_workflow.add_edge("get_schema_tool", "query_gen_agent")
     sql_workflow.add_conditional_edges(
         "query_gen_agent",
-        router
+        router,
     )
     sql_workflow.add_edge("check_query_agent", "execute_query_tool")
     sql_workflow.add_edge("execute_query_tool", "query_gen_agent")
 
-    sql_app = sql_workflow.compile()
-    
-    return sql_app
+    app = sql_workflow.compile()
 
-from IPython.display import Image, display
-from langchain_core.runnables.graph import MermaidDrawMethod
+    return app
 
-def visualize_graph():
-    print("oi")
-    with open("graph.png", "wb") as f:
-        f.write(create_sql_graph().get_graph().draw_mermaid_png())
-    print("Graph saved as graph.png")
-
-visualize_graph()

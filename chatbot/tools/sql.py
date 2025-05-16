@@ -1,5 +1,5 @@
 from langchain_core.tools import tool
-from sql.connection import get_db
+from chatbot.sql.connection import get_db
 from langchain_community.tools.sql_database.tool import (
     InfoSQLDatabaseTool,
     ListSQLDatabaseTool,

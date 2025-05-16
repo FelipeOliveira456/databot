@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables.base import RunnableBinding
 from langchain_core.runnables.base import RunnableSequence
-from tools.sql_tools import (
+from chatbot.tools.sql import (
     info_sql_database_tool,
     query_sql_database_tool,
     SubmitFinalAnswer
@@ -9,6 +9,7 @@ from tools.sql_tools import (
 from langchain_ollama import ChatOllama
 
 def get_query_checker() -> RunnableSequence:
+    
     query_check_system = """You are a SQL expert with a strong attention to detail.
     Double check the SQLite query for common mistakes, including:
     - Using NOT IN with NULL values
