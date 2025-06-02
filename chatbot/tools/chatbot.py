@@ -3,20 +3,21 @@ from typing import Literal
 
 class RouteSupervisor(BaseModel):
     """
-    Decision router between agent nodes.
+    Roteador de decisão entre nós de agentes.
 
-    This tool is used to determine the next step in the conversation flow
-    and to define the message to be passed to another agent (e.g., an SQL agent).
+    Esta ferramenta é usada para determinar o próximo passo no fluxo da conversa
+    e definir a mensagem a ser repassada para outro agente (por exemplo, um agente SQL).
 
-    Use this tool only when the message is not intended for the human user
-    interacting with the chatbot. If the message should go to the human,
-    do not use this tool—respond directly instead.
+    Use esta ferramenta apenas quando a mensagem não for destinada ao usuário humano
+    que está interagindo com o chatbot. Se a mensagem for para o humano,
+    não use esta ferramenta — responda diretamente.
     """
+
     goto: Literal["sql"] = Field(
         ...,
-        description="Target destination. Use 'sql' to forward to the SQL agent."
+        description="Destino de encaminhamento. Use 'sql' para encaminhar para o agente SQL."
     )
     message: str = Field(
-        ...,
-        description="Message to be sent to the next agent based on the chosen destination."
+        description="Uma pergunta em linguagem natural sobre os dados. Não inclua código SQL ou Python."
     )
+

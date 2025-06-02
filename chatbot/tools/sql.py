@@ -14,19 +14,13 @@ info_sql_database_tool = InfoSQLDatabaseTool(db=db)
 @tool
 def query_sql_database_tool(query: str) -> str:
     """
-    Execute a SQL query against the database and get back the result.
-    If the query is not correct, an error message will be returned.
-    If an error is returned, rewrite the query, check the query, and try again.
+    Execute uma consulta SQL no banco de dados e obtenha o resultado.
+    Se a consulta não estiver correta, uma mensagem de erro será retornada.
+    Se um erro for retornado, reescreva a consulta, verifique-a e tente novamente.
     """
+
     result = db.run_no_throw(query)
     if not result:
-        return "Error: Query failed. Please rewrite your query and try again."
+        return "Erro: A consulta falhou. Por favor, reescreva sua consulta e tente novamente."
     return result
-
-class SubmitFinalAnswer(BaseModel):
-    """Submit the final answer to orchestrator that will process this data"""
-
-    final_answer: List[List[Any]] = Field(..., description="The final answer to orchestrator")
-    description: str = Field(..., description="Summary of what the final_answer data contains, including columns and context.")
-
 

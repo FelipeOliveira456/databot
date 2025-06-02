@@ -4,72 +4,39 @@ from langchain_core.runnables.base import RunnableSequence
 from chatbot.tools.sql import (
     info_sql_database_tool,
     query_sql_database_tool,
-    SubmitFinalAnswer
 )
 from langchain_ollama import ChatOllama
 
-def get_query_checker() -> RunnableSequence:
-    
-    query_check_system = """You are a SQL expert with a strong attention to detail.
-    Double check the SQLite query for common mistakes, including:
-    - Using NOT IN with NULL values
-    - Using UNION when UNION ALL should have been used
-    - Using BETWEEN for exclusive ranges
-    - Data type mismatch in predicates
-    - Properly quoting identifiers
-    - Using the correct number of arguments for functions
-    - Casting to the correct data type
-    - Using the proper columns for joins
-
-    If there are any of the above mistakes, rewrite the query. If there are no mistakes, just reproduce the original query.
-
-    You will call the appropriate tool to execute the query after running this check."""
-
-    query_check_prompt = ChatPromptTemplate.from_messages(
-        [("system", query_check_system), ("placeholder", "{messages}")]
-    )
-    query_check = query_check_prompt | ChatOllama(model="gpt-4o", temperature=0).bind_tools(
-        [query_sql_database_tool]
-    )
-
-    return query_check
-
 def get_schema_model() -> RunnableBinding:
-    model_get_schema = ChatOllama(model="gpt-4o", temperature=0).bind_tools(
+    model_get_schema = ChatOllama(model="qwen2.5-coder:14b", temperature=0).bind_tools(
         [info_sql_database_tool]
     )
 
     return model_get_schema
     
 def get_query_gen() -> RunnableSequence:
-    query_gen_system = """You are a SQL expert with a strong attention to detail.
+    query_gen_system = """
+    Você é um agente de geração de SQL conectado a um banco de dados MySQL.
 
-    Given an input question, output a syntactically correct MySQL query to run, then look at the results of the query and return the answer.
+    Sua tarefa é:
+    1. Traduzir a pergunta do usuário, escrita em linguagem natural, para uma consulta SQL válida.
+    2. Chamar a ferramenta `query_sql_database_tool` com essa consulta para executá-la.
+    3. Após receber o resultado da consulta, enviar ao ususário o resultado da query.
 
-    DO NOT call any tool besides SubmitFinalAnswer to submit the final answer.
-
-    When generating the query:
-
-    Output the SQL query that answers the input question without a tool call.
-
-    Unless the user specifies a specific number of examples they wish to obtain, always limit your query to at most 5 results.
-    You can order the results by a relevant column to return the most interesting examples in the database.
-    Never query for all the columns from a specific table, only ask for the relevant columns given the question.
-
-    If you get an error while executing a query, rewrite the query and try again.
-
-    If you get an empty result set, you should try to rewrite the query to get a non-empty result set. 
-    NEVER make stuff up if you don't have enough information to answer the query... just say you don't have enough information.
-
-    If you have enough information to answer the input question, simply invoke the appropriate tool to submit the final answer to the user.
-
-    DO NOT make any DML statements (INSERT, UPDATE, DELETE, DROP etc.) to the database."""
+    Regras:
+    - NÃO responda à pergunta antes de executar a consulta.
+    - SEMPRE use a ferramenta `query_sql_database_tool` para executar a consulta.
+    - Sua resposta final deve se basear estritamente no resultado real da consulta — não invente nem assuma dados.
+    - Se o usuário não especificar quantos resultados deseja, limite o conjunto de resultados a no máximo 5 linhas.
+    - NÃO selecione todas as colunas (evite `SELECT *`). Inclua apenas as colunas relevantes para a pergunta.
+    - NUNCA escreva consultas que modifiquem o banco de dados (sem INSERT, UPDATE, DELETE, DROP, etc).
+    """
 
     query_gen_prompt = ChatPromptTemplate.from_messages(
         [("system", query_gen_system), ("placeholder", "{messages}")]
     )
-    query_gen = query_gen_prompt | ChatOllama(model="gpt-4o", temperature=0).bind_tools(
-        [SubmitFinalAnswer]
+    query_gen = query_gen_prompt | ChatOllama(model="qwen2.5-coder:14b", temperature=0).bind_tools(
+        [query_sql_database_tool]
     )
 
     return query_gen

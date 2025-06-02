@@ -5,56 +5,29 @@ from chatbot.tools.chatbot import RouteSupervisor
 def get_supervisor_agent():
 
     system_prompt = """
-    You are a supervisor tasked with managing a conversation between the following workers: sql.
+    Você é um supervisor encarregado de gerenciar uma conversa entre os seguintes trabalhadores: sql.
 
-    Your responsibilities are:
-    1. Read the current conversation (provided as a list of messages).
-    2. Decide which worker should handle the next step of the task.
-        - If the task requires a subgraph like "sql", forward the task to the corresponding worker.
-    3. Generate a message for the selected worker to continue the task, or respond directly to the user if no tool is needed.
+    Suas responsabilidades são:
+    1. Ler a conversa atual (fornecida como uma lista de mensagens).
+    2. Decidir qual trabalhador deve lidar com o próximo passo da tarefa.
+    - Se a tarefa exigir um subgrafo como "sql", encaminhe a tarefa para o trabalhador correspondente.
+    3. Gerar uma mensagem para o trabalhador selecionado continuar a tarefa, ou responder diretamente ao usuário se nenhuma ferramenta for necessária.
 
-    If the task should proceed to another worker (e.g., sql), use the tool to forward the message.
-    If no action is needed (i.e., the message is for the user), **do not use the tool** and respond directly.
+    Se a tarefa deve prosseguir para outro trabalhador (por exemplo, sql), use a ferramenta para encaminhar a mensagem.
+    Se nenhuma ação for necessária (ou seja, a mensagem é para o usuário), **não use a ferramenta** e responda diretamente.
 
-    Tools available:
-    - sql: A tool to forward the task to the SQL worker. It should only be used if the task is to be delegated to an agent.
+    Ferramentas disponíveis:
+    - sql: Uma ferramenta para encaminhar a tarefa ao trabalhador SQL. Deve ser usada apenas se a tarefa for delegada a um agente.
+
+    Use apenas as ferramentas listadas acima.
     """
 
     summarization_prompt = ChatPromptTemplate.from_messages(
         [("system", system_prompt), ("placeholder", "{messages}")])
 
-    supervisor_agent = summarization_prompt | ChatOllama(model="teste", temperature=0).bind_tools(
+    supervisor_agent = summarization_prompt | ChatOllama(model="qwen3:8b", temperature=0.2).bind_tools(
         [RouteSupervisor]
     )
     return supervisor_agent
-
-def get_summarization_agent():
-
-    system_prompt = """
-    You are a summarization agent.
-
-    You will be given:
-    - An existing summary of a conversation so far (may be empty)
-    - A list of messages
-
-    Your task is to update the summary by incorporating the most important new information from the messages. The updated summary should reflect the entire conversation up to this point.
-
-    Guidelines:
-    - Preserve relevant content from the existing summary
-    - Integrate key points, decisions, or questions from the new messages
-    - Keep the summary concise and focused
-    - If the existing summary is empty, generate a new one from scratch
-    - Do not repeat unchanged information
-    - Ignore irrelevant or off-topic content
-
-    Return only the updated summary as plain text.
-    """
-
-    summarization_prompt = ChatPromptTemplate.from_messages(
-        [("system", system_prompt), ("placeholder", "{messages}")])
-
-    summarization_gen = summarization_prompt | ChatOllama(model="gpt-4o", temperature=0)
-
-    return summarization_gen
 
 

@@ -1,58 +1,30 @@
-from langchain_core.messages import (
-    SystemMessage,
-    HumanMessage,
-    RemoveMessage
-)
 from chatbot.agents.chatbot import (
     get_supervisor_agent,
-    get_summarization_agent
 )
 from chatbot.schemas.schemas import ( 
     BaseState as State
 )
-from langgraph.checkpoint.memory import MemorySaver
-from langgraph.types import interrupt
+from chatbot.graph.subgraphs.sql.workflow import create_sql_graph
+from langchain_core.messages import AIMessage
 
 supervisor_agent = get_supervisor_agent()
-summarization_agent = get_summarization_agent()
+sql_graph = create_sql_graph()
 
 def supervisor_node(state: State):
-    summary = state.get("summary", "")
-
-    if summary:
-        
-        system_message = f"Summary of conversation earlier: {summary}"
-
-        messages = [SystemMessage(content=system_message)] + state["messages"]
-    
-    else:
-        messages = state["messages"]
-    
-    response = supervisor_agent.invoke(messages)
+    response = supervisor_agent.invoke({"messages": state["messages"]})
     
     return {"messages": response}
 
-def summarization_node(state: State):
-    # summary = state.get("summary", "")
+def sql_node(state: State):
 
-    # if summary:
-        
-    #     summary_message = (
-    #         f"This is summary of the conversation to date: {summary}\n\n"
-    #         "Extend the summary by taking into account the new messages above:"
-    #     )
-    
-    # else:
-    #     summary_message = "Create a summary of the conversation above:"
-    
-    # messages = state["messages"] + [HumanMessage(content=summary_message)]
-    # response = summarization_agent.invoke(messages)
-    # delete_messages = [RemoveMessage(id=m.id) for m in state["messages"][:-5]]
-    # return {"summary": response.content, "messages": delete_messages}
-    return {"messages": "rubinho"}
+    last_message = state["messages"][-1]
+    tool_call = last_message.tool_calls[-1]
+    message = tool_call["args"]["message"]
+    first_state = {"messages": message}
 
-def human_node(state: State):
-    to_user = state["messages"][-1]
-    response = interrupt(to_user)
-    message = HumanMessage(response)
-    return {"messages": message}
+    result = sql_graph.invoke(first_state)
+    response = result["messages"][-3]
+    query = AIMessage(response.tool_calls[-1]["args"]["query"])
+    return {"messages": query}
+
+    

@@ -2,12 +2,10 @@ from langgraph.graph import END
 from chatbot.schemas.schemas import BaseState as State
 from typing import Literal
 
-def router(state: State) -> Literal[END, "query_gen_agent", "check_query_agent"]:
+def router(state: State) -> Literal[END, "execute_query_tool"]:
     messages = state["messages"]
     last_message = messages[-1]
-    if getattr(last_message, "tool_calls", None):
+    if not last_message.tool_calls:
         return END
-    if last_message.content.startswith("Error:"):
-        return "query_gen_agent"
     else:
-        return "check_query_agent"
+        return "execute_query_tool"
