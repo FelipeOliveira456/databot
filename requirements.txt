@@ -9,11 +9,14 @@ async-timeout==4.0.3
 attrs==25.3.0
 certifi==2025.1.31
 charset-normalizer==3.4.1
+contourpy==1.3.2
+cycler==0.12.1
 dataclasses-json==0.6.7
 decorator==5.2.1
 dydantic==0.0.8
 exceptiongroup==1.2.2
 executing==2.2.0
+fonttools==4.59.0
 frozenlist==1.6.0
 greenlet==3.2.1
 h11==0.16.0
@@ -26,6 +29,7 @@ ipython==8.36.0
 jedi==0.19.2
 jsonpatch==1.33
 jsonpointer==3.0.0
+kiwisolver==1.4.9
 langchain==0.3.24
 langchain-community==0.3.22
 langchain-core==0.3.56
@@ -38,6 +42,7 @@ langgraph-prebuilt==0.1.8
 langgraph-sdk==0.1.63
 langsmith==0.3.35
 marshmallow==3.26.1
+matplotlib==3.10.5
 matplotlib-inline==0.1.7
 multidict==6.4.3
 mypy_extensions==1.1.0
@@ -46,6 +51,7 @@ ollama==0.4.8
 orjson==3.10.16
 ormsgpack==1.9.1
 packaging==24.2
+pandas==2.3.1
 parso==0.8.4
 pexpect==4.9.0
 pillow==11.2.1
@@ -58,11 +64,18 @@ pydantic-settings==2.9.1
 pydantic_core==2.33.1
 pyee==11.1.1
 Pygments==2.19.1
+PyMySQL==1.1.1
+pypandoc==1.15
+pyparsing==3.2.3
 pyppeteer==2.0.0
+python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
+pytz==2025.2
 PyYAML==6.0.2
 requests==2.32.3
 requests-toolbelt==1.0.0
+seaborn==0.13.2
+six==1.17.0
 sniffio==1.3.1
 SQLAlchemy==2.0.40
 stack-data==0.6.3
@@ -73,6 +86,7 @@ trustcall==0.0.39
 typing-inspect==0.9.0
 typing-inspection==0.4.0
 typing_extensions==4.13.2
+tzdata==2025.2
 urllib3==1.26.20
 wcwidth==0.2.13
 websockets==10.4

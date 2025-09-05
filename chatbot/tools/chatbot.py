@@ -1,23 +1,17 @@
 from pydantic import BaseModel, Field
-from typing import Literal
+from typing import Literal, Optional
 
 class RouteSupervisor(BaseModel):
-    """
-    Roteador de decisão entre nós de agentes.
-
-    Esta ferramenta é usada para determinar o próximo passo no fluxo da conversa
-    e definir a mensagem a ser repassada para outro agente (por exemplo, um agente SQL).
-
-    Use esta ferramenta apenas quando a mensagem não for destinada ao usuário humano
-    que está interagindo com o chatbot. Se a mensagem for para o humano,
-    não use esta ferramenta — responda diretamente.
-    """
-
-    goto: Literal["sql"] = Field(
+    goto: Literal["sql", "analysis"] = Field(
         ...,
-        description="Destino de encaminhamento. Use 'sql' para encaminhar para o agente SQL."
+        description="Destino de encaminhamento. Use 'sql' para encaminhar para o agente SQL ou 'analysis' para análise."
     )
     message: str = Field(
-        description="Uma pergunta em linguagem natural sobre os dados. Não inclua código SQL ou Python."
+        ...,
+        description=(
+            "Mensagem para o agente encaminhado. "
+            "Se 'goto' for 'sql', deve ser uma pergunta em linguagem natural sobre os dados. "
+            "Se 'goto' for 'analysis', deve ser uma descrição da análise a ser realizada."
+        )
     )
 

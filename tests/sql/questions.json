@@ -1,0 +1,16 @@
+questions = [
+    "Quantas vendas foram realizadas em cada mês de cada ano?",                                       # 1) Venda mensal acumulada
+    "Quantas vendas foram registradas em cada ano?",                                                  # 2) Venda anual
+    "Quantas vendas ocorreram em cada dia da semana?",                                                # 3) Venda por dia da semana
+    "Quantas vendas foram feitas em cada hora do dia?",                                               # 4) Venda por hora
+    "Como evoluiu a quantidade de vendas mês a mês em 2024, em termos percentuais?",                  # 5) Evolução dos meses
+    "Quantas vendas foram feitas por grupo de produtos?",                                             # 6) Venda por grupo de produtos
+    "Quantas vendas foram feitas por produto individual?",                                            # 7) Venda por produtos
+    "Quantas vendas foram realizadas por forma de pagamento?",                                        # 8) Venda por forma de recebimento
+    "Quantas vendas foram atribuídas a cada cliente?",                                                # 9) Venda por clientes
+    "Quantas vendas foram feitas por segmento de clientes?",                                          #10) Venda por segmento dos clientes
+    "Quantas vendas foram realizadas por cada marketplace? A resposta deve associar o nome do marketplace com o numero de vendas",                                               #11) Venda por marketplace
+    "Quantas vendas foram atribuídas a cada vendedor?",                                               #12) Venda por vendedor
+    "Quantas vendas foram feitas por canal de venda?",                                                #13) Venda por canal de venda
+    "Quantas vendas foram realizadas em cada estado?",                                                #14) Venda por Estado
+]

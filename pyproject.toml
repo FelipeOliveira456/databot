@@ -1,0 +1,38 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "Pacote Python para análise de dados de vendas e geração de gráficos SQL usando LangGraph e LLM."
+authors = [
+    { name="Felipe Geraldo" }
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+
+dependencies = [
+    "pandas>=2.3.1",
+    "numpy>=2.2.5",
+    "SQLAlchemy>=2.0.40",
+    "PyMySQL>=1.1.1",
+    "matplotlib>=3.10.5",
+    "seaborn>=0.13.2",
+    "orjson>=3.10.16",
+    "python-dotenv>=1.1.0",
+    "pytz>=2025.2",
+    "python-dateutil>=2.9.0.post0",
+    "pydantic>=2.11.3",
+    "langchain>=0.3.24",
+    "langchain-core>=0.3.56",
+    "langchain-community>=0.3.22",
+    "langchain-ollama>=0.3.2",
+    "langgraph>=0.3.34",
+    "langgraph-sdk>=0.1.63",
+    "langgraph-prebuilt>=0.1.8",
+    "langsmith>=0.3.35",
+    "ollama>=0.4.8",
+    "pypandoc>=1.11",  
+    "pyppeteer>=2.0.0"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

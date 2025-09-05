@@ -12,7 +12,7 @@ db_name = os.getenv("MYSQL_DB")
 
 mysql_uri = f"mysql+pymysql://{user}:{password}@{host}:{port}/{db_name}"
 
-db = SQLDatabase.from_uri(mysql_uri)
+db = SQLDatabase.from_uri(mysql_uri, sample_rows_in_table_info=0)
 
 def get_db():
     return db
