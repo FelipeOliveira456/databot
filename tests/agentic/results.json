@@ -1,0 +1,1321 @@
+[
+  [
+    {
+      "question": "Quantas vendas foram realizadas em cada estado do Brasil?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Obtenha a quantidade total de vendas agrupadas por estado do cliente."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise as vendas por estado."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para contar o número de vendas por estado do Brasil"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analisar a distribuição de vendas por estado brasileiro"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais meses tiveram maior faturamento em 2023?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento mensal do ano de 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar o faturamento por mês em 2023 para identificar os meses com maiores valores"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais categorias de produto mais contribuíram para o faturamento em 2024?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere o faturamento total de cada categoria de produto em 2024."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento por categoria."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar as categorias de produto e seus valores de faturamento em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar e analisar as categorias de produto que mais contribuíram para o faturamento de 2024"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "Qual foi o marketplace que mais cresceu entre 2022 e 2023 em número de pedidos?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Compare o número de pedidos de cada marketplace entre 2022 e 2023 e identifique o que teve maior crescimento percentual."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o crescimento dos marketplaces entre 2022 e 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de pedidos por marketplace em 2022 e 2023"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Calcular o crescimento entre 2022 e 2023 e identificar o marketplace com maior variação"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 produtos mais vendidos",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 produtos mais vendidos e a quantidade total vendida de cada um."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 produtos mais vendidos"
+        }
+      ],
+      "evaluate": 6
+    },
+    {
+      "question": "Quem são os melhores e piores vendedores?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o desempenho dos vendedores, identificando os melhores e os piores, e descreva padrões de desempenho."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar os dados do CSV para identificar os melhores e piores vendedores"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Quais clientes têm valor médio por pedido acima da média geral?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Calcule o valor médio por pedido de cada cliente e compare com a média geral."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os clientes com valor médio acima da média geral."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para calcular a média geral de valor por pedido e identificar clientes com média acima dela"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar os clientes cujo valor médio por pedido está acima da média geral"
+        }
+      ],
+      "evaluate": 6
+    },
+    {
+      "question": "Plote um gráfico de barras mostrando a evolução do faturamento mensal em 2023",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plote um gráfico de barras da evolução do faturamento mensal em 2023 e analise os resultados obtidos."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plotar gráfico de barras mostrando a evolução do faturamento mensal em 2023"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Analise os produtos com maior quantidade vendida em 2024",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere os produtos mais vendidos em 2024 com a quantidade total vendida."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os produtos mais vendidos em 2024."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar a quantidade vendida de cada produto em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar os produtos com maior quantidade vendida com base nos dados de 2024"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas em cada ano",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas por ano."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 clientes com maior valor total de vendas por ano"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "fjkfklahdsfkjasdhfahlsdfaasfldjhfak fjkadfhkasdh",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação é ilegível."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Qual o esporte mais praticado na Suíça?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação não está relacionada com vendas."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é fora do escopo (pergunta sobre esporte na Suíça, não relacionado a vendas)"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quero analise sobre",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação está incompleta."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 9
+    }
+  ],
+  [
+    {
+      "question": "Quantas vendas foram realizadas em cada estado do Brasil?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Obtenha a quantidade total de vendas agrupadas por estado do cliente."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise as vendas por estado."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para contar o número de vendas por estado do Brasil"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analisar a distribuição das vendas por estado brasileiro"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais meses tiveram maior faturamento em 2023?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento mensal do ano de 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar o faturamento por mês em 2023 para identificar os meses com maior valor"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais categorias de produto mais contribuíram para o faturamento em 2024?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere o faturamento total de cada categoria de produto em 2024."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento por categoria."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o faturamento por categoria de produto em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar as categorias de produto que mais contribuíram para o faturamento"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Qual foi o marketplace que mais cresceu entre 2022 e 2023 em número de pedidos?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Compare o número de pedidos de cada marketplace entre 2022 e 2023 e identifique o que teve maior crescimento percentual."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o crescimento dos marketplaces entre 2022 e 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de pedidos por marketplace em 2022 e 2023"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Calcular a variação percentual de pedidos entre 2022 e 2023 por marketplace e identificar o com maior crescimento"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 produtos mais vendidos",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 produtos mais vendidos e a quantidade total vendida de cada um."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 produtos mais vendidos"
+        }
+      ],
+      "evaluate": 6
+    },
+    {
+      "question": "Quem são os melhores e piores vendedores?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o desempenho dos vendedores, identificando os melhores e os piores, e descreva padrões de desempenho."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Identificar os melhores e piores vendedores com base nos dados fornecidos no CSV"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais clientes têm valor médio por pedido acima da média geral?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Calcule o valor médio por pedido de cada cliente e compare com a média geral."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os clientes com valor médio acima da média geral."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para calcular o valor médio por pedido por cliente e a média geral de todos os pedidos"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar e listar os clientes cujo valor médio por pedido é superior à média geral calculada"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Plote um gráfico de barras mostrando a evolução do faturamento mensal em 2023",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plote um gráfico de barras da evolução do faturamento mensal em 2023 e analise os resultados obtidos."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plotar gráfico de barras mostrando a evolução do faturamento mensal em 2023 a partir do arquivo data.csv"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Analise os produtos com maior quantidade vendida em 2024",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere os produtos mais vendidos em 2024 com a quantidade total vendida."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os produtos mais vendidos em 2024."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os produtos com maior quantidade vendida em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analisar os produtos com maior quantidade vendida em 2024"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas em cada ano",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas por ano."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 clientes com maior valor total de vendas em cada ano"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "fjkfklahdsfkjasdhfahlsdfaasfldjhfak fjkadfhkasdh",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação é ilegível."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Qual o esporte mais praticado na Suíça?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação não está relacionada com vendas."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é fora do escopo (pergunta sobre esporte, não relacionada a vendas)"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quero analise sobre",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação está incompleta."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 10
+    }
+  ],
+  [
+    {
+      "question": "Quantas vendas foram realizadas em cada estado do Brasil?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Obtenha a quantidade total de vendas agrupadas por estado do cliente."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise as vendas por estado."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de vendas por estado do Brasil"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analisar a distribuição das vendas por estado brasileiro"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais meses tiveram maior faturamento em 2023?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento mensal do ano de 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar os faturamentos mensais de 2023 para identificar os meses com maior valor"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais categorias de produto mais contribuíram para o faturamento em 2024?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere o faturamento total de cada categoria de produto em 2024."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento por categoria."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o faturamento por categoria de produto em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar as categorias de produto que mais contribuíram para o faturamento"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Qual foi o marketplace que mais cresceu entre 2022 e 2023 em número de pedidos?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Compare o número de pedidos de cada marketplace entre 2022 e 2023 e identifique o que teve maior crescimento percentual."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o crescimento dos marketplaces entre 2022 e 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de pedidos por marketplace em 2022 e 2023"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Comparar o crescimento entre 2022 e 2023 por marketplace e identificar o maior crescimento"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 produtos mais vendidos",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 produtos mais vendidos e a quantidade total vendida de cada um."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 produtos mais vendidos e exportar como CSV"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quem são os melhores e piores vendedores?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o desempenho dos vendedores, identificando os melhores e os piores, e descreva padrões de desempenho."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar os dados de vendas do arquivo data.csv para identificar os melhores e piores vendedores"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "Quais clientes têm valor médio por pedido acima da média geral?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Calcule o valor médio por pedido de cada cliente e compare com a média geral."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os clientes com valor médio acima da média geral."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para calcular o valor médio por cliente e a média geral de todos os pedidos"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar clientes cujo valor médio por pedido é superior à média geral calculada"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Plote um gráfico de barras mostrando a evolução do faturamento mensal em 2023",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plote um gráfico de barras da evolução do faturamento mensal em 2023 e analise os resultados obtidos."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Gerar um gráfico de barras mostrando a evolução do faturamento mensal em 2023"
+        }
+      ],
+      "evaluate": 7
+    },
+    {
+      "question": "Analise os produtos com maior quantidade vendida em 2024",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere os produtos mais vendidos em 2024 com a quantidade total vendida."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os produtos mais vendidos em 2024."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar as vendas de 2024 agrupadas por produto"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar os produtos com maior quantidade vendida em 2024 com base nos dados recuperados"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas em cada ano",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas por ano."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 clientes com maior valor total de vendas por ano"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Exportar os resultados da consulta SQL para um arquivo CSV"
+        }
+      ],
+      "evaluate": 0
+    },
+    {
+      "question": "fjkfklahdsfkjasdhfahlsdfaasfldjhfak fjkadfhkasdh",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação é ilegível."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Qual o esporte mais praticado na Suíça?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação não está relacionada com vendas."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é fora do escopo (não relacionado a dados de vendas)"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quero analise sobre",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação está incompleta."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 10
+    }
+  ],
+  [
+    {
+      "question": "Quantas vendas foram realizadas em cada estado do Brasil?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Obtenha a quantidade total de vendas agrupadas por estado do cliente."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise as vendas por estado."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de vendas por estado do Brasil"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Apresentar a distribuição das vendas por estado"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais meses tiveram maior faturamento em 2023?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento mensal do ano de 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar o faturamento mensal de 2023 e identificar os meses com maior valor"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais categorias de produto mais contribuíram para o faturamento em 2024?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere o faturamento total de cada categoria de produto em 2024."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento por categoria."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o faturamento por categoria de produto em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar as categorias de produto com maior contribuição para o faturamento"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Qual foi o marketplace que mais cresceu entre 2022 e 2023 em número de pedidos?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Compare o número de pedidos de cada marketplace entre 2022 e 2023 e identifique o que teve maior crescimento percentual."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o crescimento dos marketplaces entre 2022 e 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de pedidos por Marketplace em 2022 e 2023"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Comparar o crescimento no número de pedidos entre os Marketplaces de 2022 para 2023"
+        }
+      ],
+      "evaluate": 6
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 produtos mais vendidos",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 produtos mais vendidos e a quantidade total vendida de cada um."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 produtos mais vendidos"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Quem são os melhores e piores vendedores?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o desempenho dos vendedores, identificando os melhores e os piores, e descreva padrões de desempenho."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Identificar os melhores e piores vendedores com base nos dados do arquivo CSV"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "Quais clientes têm valor médio por pedido acima da média geral?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Calcule o valor médio por pedido de cada cliente e compare com a média geral."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os clientes com valor médio acima da média geral."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para calcular o valor médio por pedido por cliente e a média geral"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar clientes cujo valor médio por pedido excede a média geral"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Plote um gráfico de barras mostrando a evolução do faturamento mensal em 2023",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plote um gráfico de barras da evolução do faturamento mensal em 2023 e analise os resultados obtidos."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Gerar um gráfico de barras com a evolução do faturamento mensal em 2023 a partir do arquivo data.csv"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Analise os produtos com maior quantidade vendida em 2024",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere os produtos mais vendidos em 2024 com a quantidade total vendida."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os produtos mais vendidos em 2024."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os produtos com maior quantidade vendida em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analisar os produtos com maior quantidade vendida com base nos dados recuperados"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas em cada ano",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas por ano."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 clientes com maior valor total de vendas em cada ano"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "fjkfklahdsfkjasdhfahlsdfaasfldjhfak fjkadfhkasdh",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação é ilegível."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 7
+    },
+    {
+      "question": "Qual o esporte mais praticado na Suíça?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação não está relacionada com vendas."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é fora do escopo do pipeline de análise de dados de vendas"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quero analise sobre",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação está incompleta."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 10
+    }
+  ],
+  [
+    {
+      "question": "Quantas vendas foram realizadas em cada estado do Brasil?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Obtenha a quantidade total de vendas agrupadas por estado do cliente."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise as vendas por estado."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de vendas por estado do Brasil"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analisar o número de vendas por estado do Brasil"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais meses tiveram maior faturamento em 2023?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento mensal do ano de 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar quais meses tiveram maior faturamento em 2023"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quais categorias de produto mais contribuíram para o faturamento em 2024?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere o faturamento total de cada categoria de produto em 2024."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o faturamento por categoria."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o faturamento por categoria de produto em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar as categorias de produto com maior contribuição para o faturamento"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Qual foi o marketplace que mais cresceu entre 2022 e 2023 em número de pedidos?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Compare o número de pedidos de cada marketplace entre 2022 e 2023 e identifique o que teve maior crescimento percentual."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise o crescimento dos marketplaces entre 2022 e 2023."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar o número de pedidos por marketplace em 2022 e 2023"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Calcular e comparar o crescimento do número de pedidos entre 2022 e 2023 por marketplace"
+        }
+      ],
+      "evaluate": 9
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 produtos mais vendidos",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 produtos mais vendidos e a quantidade total vendida de cada um."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os 10 produtos mais vendidos"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Quem são os melhores e piores vendedores?",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analise o desempenho dos vendedores, identificando os melhores e os piores, e descreva padrões de desempenho."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Analisar os dados do arquivo CSV para identificar os melhores e piores vendedores"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Quais clientes têm valor médio por pedido acima da média geral?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Calcule o valor médio por pedido de cada cliente e compare com a média geral."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os clientes com valor médio acima da média geral."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para calcular o valor médio por pedido por cliente e comparar com a média geral"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar clientes cujo valor médio por pedido excede a média geral calculada"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Plote um gráfico de barras mostrando a evolução do faturamento mensal em 2023",
+      "csv": "data.csv",
+      "correct_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plote um gráfico de barras da evolução do faturamento mensal em 2023 e analise os resultados obtidos."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "analysis",
+          "description": "Plotar um gráfico de barras mostrando a evolução do faturamento mensal em 2023"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Analise os produtos com maior quantidade vendida em 2024",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Recupere os produtos mais vendidos em 2024 com a quantidade total vendida."
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Analise os produtos mais vendidos em 2024."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para recuperar os produtos com maior quantidade vendida em 2024"
+        },
+        {
+          "subgraph": "analysis",
+          "description": "Identificar os top produtos com base na quantidade vendida no ano de 2024"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas em cada ano",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas por ano."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "sql",
+          "description": "Gerar a query SQL para obter os 10 clientes com maior valor total de vendas por ano"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "fjkfklahdsfkjasdhfahlsdfaasfldjhfak fjkadfhkasdh",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação é ilegível."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 8
+    },
+    {
+      "question": "Qual o esporte mais praticado na Suíça?",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação não está relacionada com vendas."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é fora do escopo (pergunta sobre esporte e não sobre vendas)"
+        }
+      ],
+      "evaluate": 10
+    },
+    {
+      "question": "Quero analise sobre",
+      "csv": "",
+      "correct_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois a solicitação está incompleta."
+        }
+      ],
+      "predicted_tasks": [
+        {
+          "subgraph": "END",
+          "description": "Encerrar pois o pedido do usuário é vago ou ambíguo"
+        }
+      ],
+      "evaluate": 10
+    }
+  ]
+]

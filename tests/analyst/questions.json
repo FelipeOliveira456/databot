@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Quais são os dias da semana com maior e menor volume de vendas?",
+    "csv": "1.csv"
+  },
+  {
+    "question": "Quais horários do dia concentram mais vendas? Existem padrões de pico?",
+    "csv": "2.csv"
+  },
+  {
+    "question": "Como o faturamento evoluiu ao longo dos anos? Existem tendências de crescimento ou queda?",
+    "csv": "3.csv"
+  },
+  {
+    "question": "Quais canais de venda são mais utilizados e quais menos?",
+    "csv": "4.csv"
+  },
+  {
+    "question": "Como o faturamento variou mês a mês em 2023? Há sazonalidade evidente?",
+    "csv": "5.csv"
+  },
+  {
+    "question": "Quais grupos de produtos vendem mais em cada mês e ano? Há mudanças sazonais entre categorias?",
+    "csv": "6.csv"
+  },
+  {
+    "question": "Como as vendas anuais se distribuem entre os diferentes marketplaces? Analise tendências, identifique quais marketplaces se destacam e possíveis variações ano a ano.",    
+    "csv": "7.csv"
+  },
+  {
+    "question": "Como se distribuíram as vendas por estado mês a mês no ano de 2020? Analise padrões regionais, identifique estados com maior ou menor volume de vendas e possíveis tendências sazonais.",
+    "csv": "8.csv"
+  }
+]

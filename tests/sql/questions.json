@@ -1,16 +1,97 @@
-questions = [
-    "Quantas vendas foram realizadas em cada mês de cada ano?",                                       # 1) Venda mensal acumulada
-    "Quantas vendas foram registradas em cada ano?",                                                  # 2) Venda anual
-    "Quantas vendas ocorreram em cada dia da semana?",                                                # 3) Venda por dia da semana
-    "Quantas vendas foram feitas em cada hora do dia?",                                               # 4) Venda por hora
-    "Como evoluiu a quantidade de vendas mês a mês em 2024, em termos percentuais?",                  # 5) Evolução dos meses
-    "Quantas vendas foram feitas por grupo de produtos?",                                             # 6) Venda por grupo de produtos
-    "Quantas vendas foram feitas por produto individual?",                                            # 7) Venda por produtos
-    "Quantas vendas foram realizadas por forma de pagamento?",                                        # 8) Venda por forma de recebimento
-    "Quantas vendas foram atribuídas a cada cliente?",                                                # 9) Venda por clientes
-    "Quantas vendas foram feitas por segmento de clientes?",                                          #10) Venda por segmento dos clientes
-    "Quantas vendas foram realizadas por cada marketplace? A resposta deve associar o nome do marketplace com o numero de vendas",                                               #11) Venda por marketplace
-    "Quantas vendas foram atribuídas a cada vendedor?",                                               #12) Venda por vendedor
-    "Quantas vendas foram feitas por canal de venda?",                                                #13) Venda por canal de venda
-    "Quantas vendas foram realizadas em cada estado?",                                                #14) Venda por Estado
+[
+  {
+    "question": "Quantas vendas foram registradas em cada dia da semana? Deve conter os nomes dos dias, não apenas números.",
+    "answer": "SELECT      DAYNAME(`dataPedido`) AS dia_semana,     COUNT(*) AS quantidade_vendas FROM      PedidoVenda GROUP BY      DAYNAME(`dataPedido`);",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Quantas vendas foram feitas em cada hora do dia?",
+    "answer": "SELECT      HOUR(`dataPedido`) AS hora_do_dia,      COUNT(*) AS quantidade_vendas FROM      `PedidoVenda` GROUP BY      HOUR(`dataPedido`) ORDER BY      hora_do_dia;",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Qual foi o faturamento total de cada ano?",
+    "answer": "SELECT      YEAR(pv.`dataPedido`) AS ano,     SUM(ipv.`precoVendido` * ipv.`qtdePedida`) AS faturamento_total FROM      `PedidoVenda` pv JOIN      `ItensPedidoVenda` ipv ON pv.`idPedido` = ipv.`idPedido` GROUP BY      YEAR(pv.`dataPedido`) ORDER BY      ano;",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Quantas vendas foram feitas por canal de venda?",
+    "answer": "SELECT cv.nomeCanalVenda, COUNT(pv.idPedido) AS quantidade_vendas FROM PedidoVenda pv JOIN CanalVenda cv ON pv.idCanalVenda = cv.idCanalVenda GROUP BY cv.nomeCanalVenda;",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Quantas vendas foram feitas por marketplace?",
+    "answer": "SELECT COUNT(*) AS total_vendas FROM PedidoVenda WHERE idMarketPlace IS NOT NULL;",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Quantas vendas foram feitas por vendedor?",
+    "answer": "SELECT v.nomeVendedor, COUNT(*) AS total_vendas FROM PedidoVenda pv JOIN Vendedor v ON pv.IdVendedor = v.IdVendedor GROUP BY v.nomeVendedor;",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Quantas vendas foram realizadas em cada estado?",
+    "answer": "SELECT c.estado, COUNT(*) AS quantidade_vendas FROM PedidoVenda pv JOIN Cliente c ON pv.idCliente = c.idCliente GROUP BY c.estado;",
+    "difficulty": "facil"
+  },
+  {
+    "question": "Qual foi o faturamento mensal 2023?",
+    "answer": "SELECT      MONTH(pv.`dataPedido`) AS mes,     SUM(ipv.`precoVendido` * ipv.`qtdePedida`) AS faturamento FROM      `PedidoVenda` pv JOIN      `ItensPedidoVenda` ipv ON pv.`idPedido` = ipv.`idPedido` WHERE      YEAR(pv.`dataPedido`) = 2023 GROUP BY      MONTH(pv.`dataPedido`) ORDER BY      mes;",
+    "difficulty": "media"
+  },
+  {
+    "question": "Quantas vendas foram realizadas por grupo de produtos a cada mês de cada ano?",
+    "answer": "SELECT      YEAR(pv.`dataPedido`) AS ano,     MONTH(pv.`dataPedido`) AS mes,     cp.`nomeCategoria` AS grupo_produto,     COUNT(*) AS quantidade_vendas FROM `PedidoVenda` pv JOIN `ItensPedidoVenda` ipv ON pv.`idPedido` = ipv.`idPedido` JOIN `Produto` p ON ipv.`idProduto` = p.`idProduto` JOIN `CategoriaProduto` cp ON p.`idCategoria` = cp.`idCategoria` GROUP BY      YEAR(pv.`dataPedido`),     MONTH(pv.`dataPedido`),     cp.`nomeCategoria` ORDER BY      ano, mes, grupo_produto;",
+    "difficulty": "media"
+  },
+  {
+    "question": "Quantos produtos foram vendidos por produto individual (Top 10)?",
+    "answer": "SELECT      p.idProduto,     p.descricao,     SUM(ip.qtdePedida) AS total_vendido FROM      Produto p JOIN      ItensPedidoVenda ip ON p.idProduto = ip.idProduto GROUP BY      p.idProduto, p.descricao ORDER BY      total_vendido DESC LIMIT 10;",
+    "difficulty": "media"
+  },
+  {
+    "question": "Quantas vendas foram realizadas por forma de recebimento a cada mês de cada ano?",
+    "answer": "SELECT      YEAR(pv.`dataPedido`) AS ano,     MONTH(pv.`dataPedido`) AS mes,     fp.`nomeFormaPgto`,     COUNT(*) AS quantidade_vendas FROM      `PedidoVenda` pv JOIN      `FormaPagamento` fp ON pv.`idFormaPgto` = fp.`idFormaPgto` GROUP BY      YEAR(pv.`dataPedido`),     MONTH(pv.`dataPedido`),     fp.`nomeFormaPgto` ORDER BY      ano, mes, fp.`nomeFormaPgto`;",
+    "difficulty": "media"
+  },
+  {
+    "question": "Quantas vendas foram realizadas múmero de parcelas a cada mês de cada ano?",
+    "answer": "SELECT      YEAR(pv.`dataPedido`) AS ano,     MONTH(pv.`dataPedido`) AS mes,     fp.`numParcelas`,     COUNT(*) AS numero_vendas FROM      `PedidoVenda` pv JOIN      `FormaPagamento` fp ON pv.`idFormaPgto` = fp.`idFormaPgto` GROUP BY      YEAR(pv.`dataPedido`),     MONTH(pv.`dataPedido`),     fp.`numParcelas` ORDER BY      ano, mes, fp.`numParcelas`;",
+    "difficulty": "media"
+  },
+  {
+    "question": "Quantas vendas foram realizadas por segmento de clientes mensalmente em 2023?",
+    "answer": "SELECT      sc.nomeSegmento,     MONTH(pv.dataPedido) AS mes,     COUNT(*) AS quantidadeVendas FROM PedidoVenda pv JOIN Cliente c ON pv.idCliente = c.idCliente JOIN SegmentoCliente sc ON c.idSegmentoCliente = sc.idSegmentoCliente WHERE YEAR(pv.dataPedido) = 2023 GROUP BY sc.nomeSegmento, MONTH(pv.dataPedido) ORDER BY mes;",
+    "difficulty": "media"
+  },
+  {
+    "question": "Quais foram os 10 clientes com maior valor total de vendas em cada ano?",
+    "answer": "WITH VendasAnuais AS (     SELECT          pv.`idCliente`,         YEAR(pv.`dataPedido`) AS ano,         SUM(ipv.`precoVendido` * ipv.`qtdePedida`) AS valor_total_vendas     FROM `PedidoVenda` pv     JOIN `ItensPedidoVenda` ipv ON pv.`idPedido` = ipv.`idPedido`     GROUP BY pv.`idCliente`, ano ), RankClientes AS (     SELECT          idCliente,         ano,         valor_total_vendas,         ROW_NUMBER() OVER (PARTITION BY ano ORDER BY valor_total_vendas DESC) AS rn     FROM VendasAnuais ) SELECT      c.`nomeCliente`,     rc.ano,     rc.valor_total_vendas FROM RankClientes rc JOIN `Cliente` c ON rc.`idCliente` = c.`idCliente` WHERE rc.rn <= 10 ORDER BY rc.ano, rc.valor_total_vendas DESC;",
+    "difficulty": "dificil"
+  },
+  {
+    "question": "Qual a variação percentual das vendas de cada grupo de produtos entre anos consecutivos?",
+    "answer": "WITH VendasAnuais AS (     SELECT          YEAR(pv.dataPedido) AS ano,         cp.nomeCategoria AS grupo_produto,         SUM(ip.qtdePedida * ip.precoVendido) AS valor_vendas     FROM PedidoVenda pv     JOIN ItensPedidoVenda ip ON pv.idPedido = ip.idPedido     JOIN Produto p ON ip.idProduto = p.idProduto     JOIN CategoriaProduto cp ON p.idCategoria = cp.idCategoria     GROUP BY YEAR(pv.dataPedido), cp.nomeCategoria ), VendasComPivote AS (     SELECT          ano,         grupo_produto,         valor_vendas,         LAG(valor_vendas) OVER (PARTITION BY grupo_produto ORDER BY ano) AS vendas_anterior     FROM VendasAnuais ) SELECT      grupo_produto,     ano,     valor_vendas,     CASE          WHEN vendas_anterior IS NOT NULL AND vendas_anterior <> 0 THEN             ROUND(((valor_vendas - vendas_anterior) / vendas_anterior) * 100, 2)         ELSE NULL     END AS variacao_percentual FROM VendasComPivote WHERE ano > (SELECT MIN(ano) FROM VendasComPivote) ORDER BY grupo_produto, ano;",
+    "difficulty": "dificil"
+  },
+  {
+    "question": "Qual foi a participação percentual de cada segmento de clientes nas vendas totais de cada mês de 2017?",
+    "answer": "SELECT      sc.nomeSegmento,     YEAR(pv.dataPedido) AS ano,     MONTH(pv.dataPedido) AS mes,     (COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (PARTITION BY YEAR(pv.dataPedido), MONTH(pv.dataPedido))) AS participacao_percentual FROM PedidoVenda pv JOIN Cliente c ON pv.idCliente = c.idCliente JOIN SegmentoCliente sc ON c.idSegmentoCliente = sc.idSegmentoCliente WHERE YEAR(pv.dataPedido) = 2017 GROUP BY sc.nomeSegmento, YEAR(pv.dataPedido), MONTH(pv.dataPedido) ORDER BY ano, mes, participacao_percentual DESC;",
+    "difficulty": "dificil"
+  },
+  {
+    "question": "Qual o marketplace que mais cresceu em 2021 em relação ao ano anterior? Retorne também a variação percentual",
+    "answer": "WITH CrescimentoMarketPlace AS (     SELECT          mp.`idMarketPlace`,         mp.`nomeMarketPlace`,         YEAR(pv.`dataPedido`) AS ano,         COUNT(pv.`idPedido`) AS total_pedidos     FROM          `PedidoVenda` pv     JOIN          `MarketPlace` mp ON pv.`idMarketPlace` = mp.`idMarketPlace`     WHERE          YEAR(pv.`dataPedido`) IN (2020, 2021)     GROUP BY          mp.`idMarketPlace`, mp.`nomeMarketPlace`, ano ), VariacaoPercentual AS (     SELECT          c1.`idMarketPlace`,         c1.`nomeMarketPlace`,         c1.total_pedidos AS pedidos_2020,         c2.total_pedidos AS pedidos_2021,         CASE              WHEN c1.total_pedidos = 0 THEN NULL             ELSE ((c2.total_pedidos - c1.total_pedidos) * 100.0 / c1.total_pedidos)         END AS variacao_percentual     FROM          CrescimentoMarketPlace c1     JOIN          CrescimentoMarketPlace c2          ON c1.`idMarketPlace` = c2.`idMarketPlace`     WHERE          c1.ano = 2020 AND c2.ano = 2021 ) SELECT      `nomeMarketPlace`,     variacao_percentual FROM      VariacaoPercentual WHERE      variacao_percentual = (SELECT MAX(variacao_percentual) FROM VariacaoPercentual);",
+    "difficulty": "dificil"
+  },
+  {
+    "question": "Quais os vendedores que nunca venderam em RJ?",
+    "answer": "SELECT v.idVendedor, v.nomeVendedor FROM Vendedor v WHERE v.idVendedor NOT IN (     SELECT DISTINCT pv.idVendedor     FROM PedidoVenda pv     JOIN Cliente c ON pv.idCliente = c.idCliente     WHERE c.estado = 'RJ' );",
+    "difficulty": "dificil"
+  },
+  {
+    "question": "Qual o valor médio por pedido de cada cliente comparado ao valor médio por pedido geral? Selecione apenas aqueles que possuem média superior",
+    "answer": "SELECT      c.idCliente,     c.nomeCliente,     AVG(total_pedidos.valor_pedido) AS media_cliente,     (SELECT AVG(valor_pedido) FROM (         SELECT SUM(precoVendido * qtdePedida) AS valor_pedido         FROM ItensPedidoVenda         GROUP BY idPedido     ) AS subquery) AS media_geral FROM Cliente c JOIN PedidoVenda pv ON c.idCliente = pv.idCliente JOIN (     SELECT          idPedido,         SUM(precoVendido * qtdePedida) AS valor_pedido     FROM ItensPedidoVenda     GROUP BY idPedido ) AS total_pedidos ON pv.idPedido = total_pedidos.idPedido GROUP BY c.idCliente, c.nomeCliente HAVING media_cliente > (     SELECT AVG(valor_pedido) FROM (         SELECT SUM(precoVendido * qtdePedida) AS valor_pedido         FROM ItensPedidoVenda         GROUP BY idPedido     ) AS subquery );",
+    "difficulty": "dificil"
+  }
 ]

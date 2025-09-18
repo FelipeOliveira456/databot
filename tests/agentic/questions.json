@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Quantas vendas foram realizadas em cada estado do Brasil?",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Obtenha a quantidade total de vendas agrupadas por estado do cliente."
+      },
+      {
+        "subgraph": "analysis",
+        "description": "Analise as vendas por estado."
+      }
+    ]
+  },
+  {
+    "question": "Quais meses tiveram maior faturamento em 2023?",
+    "csv": "data.csv",
+    "tasks": [
+      {
+        "subgraph": "analysis",
+        "description": "Analise o faturamento mensal do ano de 2023."
+      }
+    ]
+  },
+  {
+    "question": "Quais categorias de produto mais contribuíram para o faturamento em 2024?",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Recupere o faturamento total de cada categoria de produto em 2024."
+      },
+      {
+        "subgraph": "analysis",
+        "description": "Analise o faturamento por categoria."
+      }
+    ]
+  },
+  {
+    "question": "Qual foi o marketplace que mais cresceu entre 2022 e 2023 em número de pedidos?",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Compare o número de pedidos de cada marketplace entre 2022 e 2023 e identifique o que teve maior crescimento percentual."
+      },
+      {
+        "subgraph": "analysis",
+        "description": "Analise o crescimento dos marketplaces entre 2022 e 2023."
+      }
+    ]
+  },
+  {
+    "question": "Me retorne os dados CSV com os 10 produtos mais vendidos",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Me retorne os dados CSV com os 10 produtos mais vendidos e a quantidade total vendida de cada um."
+      }
+    ]
+  },
+  {
+    "question": "Quem são os melhores e piores vendedores?",
+    "csv": "data.csv",
+    "tasks": [
+      {
+        "subgraph": "analysis",
+        "description": "Analise o desempenho dos vendedores, identificando os melhores e os piores, e descreva padrões de desempenho."
+      }
+    ]
+  },
+  {
+    "question": "Quais clientes têm valor médio por pedido acima da média geral?",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Calcule o valor médio por pedido de cada cliente e compare com a média geral."
+      },
+      {
+        "subgraph": "analysis",
+        "description": "Analise os clientes com valor médio acima da média geral."
+      }
+    ]
+  },
+  {
+    "question": "Plote um gráfico de barras mostrando a evolução do faturamento mensal em 2023",
+    "csv": "data.csv",
+    "tasks": [
+      {
+        "subgraph": "analysis",
+        "description": "Plote um gráfico de barras da evolução do faturamento mensal em 2023 e analise os resultados obtidos."
+      }
+    ]
+  },
+  {
+    "question": "Analise os produtos com maior quantidade vendida em 2024",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Recupere os produtos mais vendidos em 2024 com a quantidade total vendida."
+      },
+      {
+        "subgraph": "analysis",
+        "description": "Analise os produtos mais vendidos em 2024."
+      }
+    ]
+  },
+  {
+    "question": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas em cada ano",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "sql",
+        "description": "Me retorne os dados CSV com os 10 clientes com maior valor total de vendas por ano."
+      }
+    ]
+  },
+  {
+    "question": "fjkfklahdsfkjasdhfahlsdfaasfldjhfak fjkadfhkasdh",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "END",
+        "description": "Encerrar pois a solicitação é ilegível."
+      }
+    ]
+  },
+  {
+    "question": "Qual o esporte mais praticado na Suíça?",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "END",
+        "description": "Encerrar pois a solicitação não está relacionada com vendas."
+      }
+    ]
+  },
+  {
+    "question": "Quero analise sobre",
+    "csv": "",
+    "tasks": [
+      {
+        "subgraph": "END",
+        "description": "Encerrar pois a solicitação está incompleta."
+      }
+    ]
+  }
+]

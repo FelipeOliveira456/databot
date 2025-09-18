@@ -1,0 +1,34 @@
+[
+    {
+        "nome_pdf": "1.pdf",
+        "avaliacao": "Nota 10. Gráfico apresentado é bem feito e as informações apresentadas são pertinentes"
+    },
+    {
+        "nome_pdf": "2.pdf",
+        "avaliacao": "Nota 7. Gráficos são bons, mas são redundantes e a análise exploratória apresenta resultados que não são relevantes, como mediana, quartis, etc sobre as horas, dado que as horas vão necessariamente de 0 a 23"
+    },
+    {
+        "nome_pdf": "3.pdf",
+        "avaliacao": "Nota 8. Os dois primeiros gráficos apresentam algum tipo de redundância, mas as informações apresentadas são pertinentes"
+    },
+    {
+        "nome_pdf": "4.pdf",
+        "avaliacao": "Nota 5. O gráfico é bom e o relatório têm informações pertinentes, porém há uma contradição entre os valores da analise exploratória introdutória e da análise gráfica"
+    },
+    {
+        "nome_pdf": "5.pdf",
+        "avaliacao": "Nota 4. Houve erro na inclusão dos gráficos, e os dois primeiros têm redundância, mas a análise é relevante"
+    },
+    {
+        "nome_pdf": "6.pdf",
+        "avaliacao": "Nota 9. Apresenta algumas informações irrelevantes, como media e mediana de anos"
+    },
+    {
+        "nome_pdf": "7.pdf",
+        "avaliacao": "Nota 7. Apresenta algumas informações irrelevantes, como média e mediana de anos. Os gráficos são bons em geral, mas ocorre nos dois primeiros gŕaficos uma sobreposição entre a legenda e as colunas, embora permaneça legível"
+    },
+    {
+        "nome_pdf": "8.pdf",
+        "avaliacao": "Nota 6. Apresenta algumas informações irrelevantes, como média e mediana de estados e meses. Os gŕaficos são bons, mas têm algum nível de redundância (principalmente entre o gráfico de linhas e o gráfico de barras empilhadas). O gráfico de barras empilhadas possui dificuldade de visualização devido à sobreposição entre a legenda e colunas. A análise é boa, mostrando a dominância de estados como SP"
+    }
+]
