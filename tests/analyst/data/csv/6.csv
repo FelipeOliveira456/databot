@@ -1,0 +1,720 @@
+ano,mes,grupo_produto,quantidade_vendas
+2015,1,Automotivo,1
+2015,1,"Bolsas, Malas e Mochilas",2
+2015,1,Brinquedos e Jogos,3
+2015,1,Celulares e Comunicação,1
+2015,1,Cozinha,1
+2015,1,Livros,2
+2015,1,"Roupas, Calçados e Acessórios",2
+2015,2,Automotivo,2
+2015,2,"Bolsas, Malas e Mochilas",1
+2015,2,Celulares e Comunicação,2
+2015,2,Livros,1
+2015,3,Automotivo,1
+2015,3,Brinquedos e Jogos,1
+2015,3,Celulares e Comunicação,1
+2015,3,Cozinha,1
+2015,3,"Eletrônicos, TV e Áudio",2
+2015,3,Papelaria e Escritório,3
+2015,3,"Roupas, Calçados e Acessórios",1
+2015,4,Automotivo,2
+2015,4,Brinquedos e Jogos,2
+2015,4,Cozinha,1
+2015,5,Automotivo,2
+2015,5,"Bolsas, Malas e Mochilas",1
+2015,5,Brinquedos e Jogos,6
+2015,5,Celulares e Comunicação,1
+2015,5,"Eletrônicos, TV e Áudio",3
+2015,5,"Esportes, Aventura e Lazer",3
+2015,5,Livros,1
+2015,5,Papelaria e Escritório,1
+2015,5,"Roupas, Calçados e Acessórios",2
+2015,6,"Bolsas, Malas e Mochilas",1
+2015,6,Brinquedos e Jogos,3
+2015,6,Celulares e Comunicação,2
+2015,6,"Eletrônicos, TV e Áudio",1
+2015,6,"Esportes, Aventura e Lazer",1
+2015,6,Livros,1
+2015,6,Papelaria e Escritório,2
+2015,7,"Bolsas, Malas e Mochilas",2
+2015,7,Brinquedos e Jogos,1
+2015,7,Celulares e Comunicação,4
+2015,7,Cozinha,1
+2015,7,"Eletrônicos, TV e Áudio",2
+2015,7,Papelaria e Escritório,1
+2015,7,"Roupas, Calçados e Acessórios",1
+2015,8,Automotivo,1
+2015,8,Celulares e Comunicação,1
+2015,8,Cozinha,1
+2015,8,"Esportes, Aventura e Lazer",1
+2015,8,"Roupas, Calçados e Acessórios",1
+2015,9,Celulares e Comunicação,3
+2015,9,"Eletrônicos, TV e Áudio",1
+2015,9,Livros,1
+2015,9,Papelaria e Escritório,1
+2015,9,"Roupas, Calçados e Acessórios",1
+2015,10,Automotivo,4
+2015,10,"Bolsas, Malas e Mochilas",5
+2015,10,Brinquedos e Jogos,1
+2015,10,"Eletrônicos, TV e Áudio",3
+2015,10,"Esportes, Aventura e Lazer",1
+2015,10,Livros,4
+2015,10,Papelaria e Escritório,1
+2015,10,"Roupas, Calçados e Acessórios",1
+2015,11,Brinquedos e Jogos,1
+2015,11,Celulares e Comunicação,1
+2015,11,Cozinha,1
+2015,11,"Esportes, Aventura e Lazer",2
+2015,11,Livros,1
+2015,12,"Bolsas, Malas e Mochilas",2
+2015,12,Celulares e Comunicação,1
+2015,12,Cozinha,1
+2015,12,Livros,2
+2016,1,Automotivo,2
+2016,1,"Bolsas, Malas e Mochilas",1
+2016,1,"Eletrônicos, TV e Áudio",1
+2016,1,Livros,1
+2016,1,"Roupas, Calçados e Acessórios",2
+2016,2,Brinquedos e Jogos,2
+2016,2,Celulares e Comunicação,2
+2016,2,Cozinha,1
+2016,2,"Esportes, Aventura e Lazer",2
+2016,2,Livros,2
+2016,2,Papelaria e Escritório,1
+2016,3,Automotivo,1
+2016,3,"Bolsas, Malas e Mochilas",1
+2016,3,Brinquedos e Jogos,2
+2016,3,Celulares e Comunicação,1
+2016,3,Cozinha,1
+2016,3,"Esportes, Aventura e Lazer",1
+2016,4,Automotivo,4
+2016,4,"Bolsas, Malas e Mochilas",5
+2016,4,Brinquedos e Jogos,5
+2016,4,Celulares e Comunicação,2
+2016,4,Cozinha,1
+2016,4,"Eletrônicos, TV e Áudio",3
+2016,4,"Esportes, Aventura e Lazer",2
+2016,4,Livros,1
+2016,4,Papelaria e Escritório,4
+2016,4,"Roupas, Calçados e Acessórios",1
+2016,5,Cozinha,1
+2016,5,"Roupas, Calçados e Acessórios",1
+2016,6,Automotivo,1
+2016,6,"Bolsas, Malas e Mochilas",2
+2016,6,Brinquedos e Jogos,1
+2016,6,Celulares e Comunicação,1
+2016,6,Cozinha,1
+2016,6,"Eletrônicos, TV e Áudio",1
+2016,6,"Esportes, Aventura e Lazer",3
+2016,6,Livros,2
+2016,6,Papelaria e Escritório,1
+2016,7,Automotivo,2
+2016,7,Brinquedos e Jogos,2
+2016,7,Celulares e Comunicação,2
+2016,7,Cozinha,1
+2016,7,"Esportes, Aventura e Lazer",2
+2016,7,Livros,3
+2016,7,Papelaria e Escritório,5
+2016,7,"Roupas, Calçados e Acessórios",1
+2016,8,Brinquedos e Jogos,1
+2016,8,Cozinha,1
+2016,8,Papelaria e Escritório,2
+2016,8,"Roupas, Calçados e Acessórios",1
+2016,9,Automotivo,1
+2016,9,"Bolsas, Malas e Mochilas",2
+2016,9,Brinquedos e Jogos,2
+2016,9,Celulares e Comunicação,1
+2016,9,"Eletrônicos, TV e Áudio",3
+2016,9,Livros,2
+2016,9,Papelaria e Escritório,2
+2016,9,"Roupas, Calçados e Acessórios",2
+2016,10,Automotivo,2
+2016,10,"Bolsas, Malas e Mochilas",1
+2016,10,Brinquedos e Jogos,1
+2016,10,Celulares e Comunicação,2
+2016,10,"Eletrônicos, TV e Áudio",3
+2016,10,"Esportes, Aventura e Lazer",2
+2016,10,Papelaria e Escritório,2
+2016,11,Automotivo,3
+2016,11,"Bolsas, Malas e Mochilas",1
+2016,11,Brinquedos e Jogos,1
+2016,11,Celulares e Comunicação,2
+2016,11,"Eletrônicos, TV e Áudio",1
+2016,11,"Esportes, Aventura e Lazer",1
+2016,11,Livros,2
+2016,11,Papelaria e Escritório,3
+2016,12,Automotivo,1
+2016,12,"Bolsas, Malas e Mochilas",1
+2016,12,Brinquedos e Jogos,2
+2016,12,Cozinha,2
+2016,12,"Eletrônicos, TV e Áudio",1
+2016,12,"Esportes, Aventura e Lazer",2
+2016,12,Livros,2
+2016,12,Papelaria e Escritório,2
+2017,1,Automotivo,2
+2017,1,"Bolsas, Malas e Mochilas",5
+2017,1,Brinquedos e Jogos,1
+2017,1,Celulares e Comunicação,1
+2017,1,Cozinha,1
+2017,1,"Eletrônicos, TV e Áudio",2
+2017,2,Automotivo,2
+2017,2,"Bolsas, Malas e Mochilas",2
+2017,2,Brinquedos e Jogos,2
+2017,2,Cozinha,1
+2017,2,"Eletrônicos, TV e Áudio",2
+2017,3,"Bolsas, Malas e Mochilas",1
+2017,3,Brinquedos e Jogos,3
+2017,3,Cozinha,1
+2017,3,"Eletrônicos, TV e Áudio",1
+2017,3,"Esportes, Aventura e Lazer",1
+2017,3,Livros,1
+2017,4,Automotivo,3
+2017,4,"Bolsas, Malas e Mochilas",2
+2017,4,Brinquedos e Jogos,1
+2017,4,Celulares e Comunicação,3
+2017,4,Cozinha,2
+2017,4,Livros,1
+2017,4,Papelaria e Escritório,1
+2017,4,"Roupas, Calçados e Acessórios",1
+2017,5,Automotivo,1
+2017,5,"Bolsas, Malas e Mochilas",1
+2017,5,Celulares e Comunicação,1
+2017,5,Cozinha,2
+2017,5,"Eletrônicos, TV e Áudio",1
+2017,5,"Esportes, Aventura e Lazer",2
+2017,5,Livros,1
+2017,5,"Roupas, Calçados e Acessórios",2
+2017,6,"Eletrônicos, TV e Áudio",1
+2017,7,Automotivo,1
+2017,7,"Esportes, Aventura e Lazer",1
+2017,7,Papelaria e Escritório,1
+2017,8,"Bolsas, Malas e Mochilas",1
+2017,8,Celulares e Comunicação,1
+2017,8,"Roupas, Calçados e Acessórios",1
+2017,9,Automotivo,3
+2017,9,"Bolsas, Malas e Mochilas",2
+2017,9,Brinquedos e Jogos,3
+2017,9,Celulares e Comunicação,1
+2017,9,Cozinha,2
+2017,9,"Eletrônicos, TV e Áudio",1
+2017,9,"Esportes, Aventura e Lazer",3
+2017,9,Livros,4
+2017,9,Papelaria e Escritório,1
+2017,9,"Roupas, Calçados e Acessórios",2
+2017,10,Automotivo,2
+2017,10,"Bolsas, Malas e Mochilas",3
+2017,10,Brinquedos e Jogos,2
+2017,10,Celulares e Comunicação,1
+2017,10,Cozinha,2
+2017,10,"Eletrônicos, TV e Áudio",4
+2017,10,Livros,2
+2017,10,Papelaria e Escritório,2
+2017,10,"Roupas, Calçados e Acessórios",1
+2017,11,"Bolsas, Malas e Mochilas",1
+2017,11,Brinquedos e Jogos,3
+2017,11,Celulares e Comunicação,1
+2017,11,"Eletrônicos, TV e Áudio",3
+2017,11,"Esportes, Aventura e Lazer",3
+2017,11,Papelaria e Escritório,2
+2017,11,"Roupas, Calçados e Acessórios",2
+2017,12,Automotivo,1
+2017,12,Brinquedos e Jogos,1
+2017,12,Celulares e Comunicação,1
+2017,12,Livros,1
+2018,1,Automotivo,2
+2018,1,"Bolsas, Malas e Mochilas",1
+2018,1,Celulares e Comunicação,2
+2018,1,Cozinha,1
+2018,1,"Esportes, Aventura e Lazer",2
+2018,1,Livros,1
+2018,1,Papelaria e Escritório,1
+2018,1,"Roupas, Calçados e Acessórios",1
+2018,2,Celulares e Comunicação,1
+2018,2,"Esportes, Aventura e Lazer",1
+2018,2,Livros,2
+2018,2,Papelaria e Escritório,1
+2018,2,"Roupas, Calçados e Acessórios",1
+2018,3,"Bolsas, Malas e Mochilas",1
+2018,3,Brinquedos e Jogos,2
+2018,3,"Eletrônicos, TV e Áudio",2
+2018,3,"Esportes, Aventura e Lazer",1
+2018,3,Papelaria e Escritório,2
+2018,3,"Roupas, Calçados e Acessórios",1
+2018,4,"Bolsas, Malas e Mochilas",1
+2018,4,Brinquedos e Jogos,1
+2018,4,Papelaria e Escritório,3
+2018,4,"Roupas, Calçados e Acessórios",1
+2018,5,"Eletrônicos, TV e Áudio",1
+2018,5,Papelaria e Escritório,1
+2018,5,"Roupas, Calçados e Acessórios",1
+2018,6,Automotivo,1
+2018,6,"Bolsas, Malas e Mochilas",1
+2018,6,Brinquedos e Jogos,1
+2018,6,Celulares e Comunicação,1
+2018,6,"Eletrônicos, TV e Áudio",1
+2018,6,Livros,2
+2018,6,Papelaria e Escritório,1
+2018,6,"Roupas, Calçados e Acessórios",3
+2018,7,"Bolsas, Malas e Mochilas",1
+2018,7,Celulares e Comunicação,3
+2018,7,Cozinha,1
+2018,7,Livros,2
+2018,8,Automotivo,1
+2018,8,"Bolsas, Malas e Mochilas",2
+2018,8,Brinquedos e Jogos,3
+2018,8,Cozinha,1
+2018,8,"Eletrônicos, TV e Áudio",2
+2018,8,"Esportes, Aventura e Lazer",1
+2018,8,Livros,2
+2018,8,Papelaria e Escritório,2
+2018,9,Automotivo,1
+2018,9,"Bolsas, Malas e Mochilas",2
+2018,9,Brinquedos e Jogos,1
+2018,9,Celulares e Comunicação,3
+2018,9,Cozinha,2
+2018,9,"Eletrônicos, TV e Áudio",4
+2018,9,"Esportes, Aventura e Lazer",1
+2018,9,Livros,1
+2018,9,Papelaria e Escritório,1
+2018,9,"Roupas, Calçados e Acessórios",1
+2018,10,Livros,1
+2018,11,"Bolsas, Malas e Mochilas",2
+2018,11,Brinquedos e Jogos,4
+2018,11,Celulares e Comunicação,3
+2018,11,Cozinha,1
+2018,11,"Esportes, Aventura e Lazer",1
+2018,12,Automotivo,2
+2018,12,Brinquedos e Jogos,1
+2018,12,Cozinha,1
+2018,12,"Eletrônicos, TV e Áudio",1
+2018,12,"Esportes, Aventura e Lazer",1
+2018,12,Livros,2
+2019,1,Automotivo,1
+2019,1,"Bolsas, Malas e Mochilas",1
+2019,1,Cozinha,1
+2019,1,"Eletrônicos, TV e Áudio",1
+2019,1,Papelaria e Escritório,1
+2019,1,"Roupas, Calçados e Acessórios",1
+2019,2,"Bolsas, Malas e Mochilas",1
+2019,2,Brinquedos e Jogos,1
+2019,2,"Eletrônicos, TV e Áudio",2
+2019,2,"Esportes, Aventura e Lazer",1
+2019,2,Livros,2
+2019,3,"Bolsas, Malas e Mochilas",1
+2019,3,Brinquedos e Jogos,1
+2019,3,Celulares e Comunicação,1
+2019,3,"Eletrônicos, TV e Áudio",1
+2019,3,"Roupas, Calçados e Acessórios",1
+2019,4,Automotivo,1
+2019,4,"Bolsas, Malas e Mochilas",3
+2019,4,Brinquedos e Jogos,1
+2019,4,Celulares e Comunicação,4
+2019,4,Cozinha,1
+2019,4,"Eletrônicos, TV e Áudio",2
+2019,4,"Esportes, Aventura e Lazer",3
+2019,4,Livros,1
+2019,4,Papelaria e Escritório,1
+2019,5,"Bolsas, Malas e Mochilas",1
+2019,5,Brinquedos e Jogos,1
+2019,5,"Eletrônicos, TV e Áudio",3
+2019,5,"Roupas, Calçados e Acessórios",1
+2019,6,Celulares e Comunicação,1
+2019,6,Cozinha,1
+2019,6,"Eletrônicos, TV e Áudio",1
+2019,6,"Esportes, Aventura e Lazer",1
+2019,6,Papelaria e Escritório,1
+2019,6,"Roupas, Calçados e Acessórios",2
+2019,7,Automotivo,2
+2019,7,Brinquedos e Jogos,2
+2019,7,Cozinha,3
+2019,7,"Eletrônicos, TV e Áudio",1
+2019,7,"Esportes, Aventura e Lazer",2
+2019,7,Papelaria e Escritório,3
+2019,7,"Roupas, Calçados e Acessórios",2
+2019,8,Automotivo,2
+2019,8,Brinquedos e Jogos,1
+2019,8,"Eletrônicos, TV e Áudio",1
+2019,8,"Esportes, Aventura e Lazer",2
+2019,8,Livros,1
+2019,8,"Roupas, Calçados e Acessórios",1
+2019,9,Celulares e Comunicação,3
+2019,9,Cozinha,1
+2019,9,"Eletrônicos, TV e Áudio",1
+2019,9,Livros,1
+2019,9,Papelaria e Escritório,1
+2019,10,"Bolsas, Malas e Mochilas",2
+2019,10,Brinquedos e Jogos,4
+2019,10,Celulares e Comunicação,1
+2019,10,"Eletrônicos, TV e Áudio",1
+2019,10,Livros,2
+2019,10,Papelaria e Escritório,2
+2019,10,"Roupas, Calçados e Acessórios",2
+2019,11,"Bolsas, Malas e Mochilas",1
+2019,11,Brinquedos e Jogos,1
+2019,11,"Eletrônicos, TV e Áudio",2
+2019,11,Papelaria e Escritório,1
+2019,12,"Bolsas, Malas e Mochilas",1
+2019,12,Brinquedos e Jogos,2
+2019,12,Celulares e Comunicação,1
+2019,12,Cozinha,3
+2019,12,"Eletrônicos, TV e Áudio",3
+2019,12,"Esportes, Aventura e Lazer",1
+2019,12,Livros,1
+2019,12,Papelaria e Escritório,1
+2020,1,Automotivo,1
+2020,1,"Bolsas, Malas e Mochilas",4
+2020,1,Brinquedos e Jogos,2
+2020,1,"Esportes, Aventura e Lazer",3
+2020,1,Papelaria e Escritório,2
+2020,2,"Bolsas, Malas e Mochilas",1
+2020,2,Brinquedos e Jogos,1
+2020,2,Celulares e Comunicação,1
+2020,2,"Eletrônicos, TV e Áudio",2
+2020,2,Papelaria e Escritório,1
+2020,2,"Roupas, Calçados e Acessórios",1
+2020,3,Automotivo,1
+2020,3,Brinquedos e Jogos,3
+2020,3,Celulares e Comunicação,1
+2020,3,Cozinha,1
+2020,3,"Eletrônicos, TV e Áudio",2
+2020,3,"Esportes, Aventura e Lazer",2
+2020,3,Livros,2
+2020,3,Papelaria e Escritório,2
+2020,3,"Roupas, Calçados e Acessórios",2
+2020,4,Automotivo,1
+2020,4,"Bolsas, Malas e Mochilas",2
+2020,4,Brinquedos e Jogos,1
+2020,4,Celulares e Comunicação,6
+2020,4,"Roupas, Calçados e Acessórios",1
+2020,5,Automotivo,2
+2020,5,Brinquedos e Jogos,1
+2020,5,Celulares e Comunicação,1
+2020,5,"Eletrônicos, TV e Áudio",1
+2020,5,"Esportes, Aventura e Lazer",3
+2020,5,Livros,1
+2020,5,Papelaria e Escritório,2
+2020,5,"Roupas, Calçados e Acessórios",1
+2020,6,Automotivo,4
+2020,6,"Bolsas, Malas e Mochilas",1
+2020,6,Brinquedos e Jogos,2
+2020,6,Celulares e Comunicação,1
+2020,6,"Eletrônicos, TV e Áudio",3
+2020,6,"Esportes, Aventura e Lazer",1
+2020,6,Livros,2
+2020,6,Papelaria e Escritório,4
+2020,6,"Roupas, Calçados e Acessórios",1
+2020,7,Automotivo,1
+2020,7,Brinquedos e Jogos,1
+2020,7,Cozinha,2
+2020,7,"Eletrônicos, TV e Áudio",3
+2020,7,Livros,2
+2020,7,Papelaria e Escritório,4
+2020,8,Automotivo,4
+2020,8,"Bolsas, Malas e Mochilas",1
+2020,8,Brinquedos e Jogos,2
+2020,8,Celulares e Comunicação,1
+2020,8,Cozinha,1
+2020,8,"Eletrônicos, TV e Áudio",1
+2020,8,"Esportes, Aventura e Lazer",3
+2020,8,Livros,1
+2020,8,Papelaria e Escritório,2
+2020,8,"Roupas, Calçados e Acessórios",1
+2020,9,Automotivo,2
+2020,9,"Bolsas, Malas e Mochilas",1
+2020,9,Celulares e Comunicação,1
+2020,9,"Eletrônicos, TV e Áudio",1
+2020,9,"Esportes, Aventura e Lazer",1
+2020,9,Papelaria e Escritório,1
+2020,9,"Roupas, Calçados e Acessórios",2
+2020,10,Automotivo,1
+2020,10,"Bolsas, Malas e Mochilas",2
+2020,10,Brinquedos e Jogos,2
+2020,10,Celulares e Comunicação,3
+2020,10,Cozinha,2
+2020,10,"Eletrônicos, TV e Áudio",1
+2020,10,Livros,3
+2020,10,Papelaria e Escritório,1
+2020,11,"Bolsas, Malas e Mochilas",3
+2020,11,Brinquedos e Jogos,2
+2020,11,"Eletrônicos, TV e Áudio",1
+2020,11,Livros,3
+2020,11,"Roupas, Calçados e Acessórios",1
+2020,12,"Bolsas, Malas e Mochilas",1
+2020,12,"Eletrônicos, TV e Áudio",2
+2020,12,"Esportes, Aventura e Lazer",1
+2020,12,Livros,2
+2021,1,Automotivo,1
+2021,1,"Bolsas, Malas e Mochilas",2
+2021,1,Brinquedos e Jogos,1
+2021,1,Cozinha,1
+2021,1,"Eletrônicos, TV e Áudio",2
+2021,1,"Esportes, Aventura e Lazer",1
+2021,1,Livros,1
+2021,1,Papelaria e Escritório,4
+2021,2,Automotivo,4
+2021,2,"Bolsas, Malas e Mochilas",3
+2021,2,Brinquedos e Jogos,2
+2021,2,Celulares e Comunicação,3
+2021,2,"Eletrônicos, TV e Áudio",2
+2021,2,"Esportes, Aventura e Lazer",2
+2021,2,Livros,1
+2021,2,Papelaria e Escritório,1
+2021,3,Brinquedos e Jogos,1
+2021,3,Cozinha,3
+2021,3,"Eletrônicos, TV e Áudio",1
+2021,3,"Roupas, Calçados e Acessórios",1
+2021,4,Automotivo,1
+2021,4,"Bolsas, Malas e Mochilas",4
+2021,4,Brinquedos e Jogos,1
+2021,4,"Eletrônicos, TV e Áudio",3
+2021,4,Livros,1
+2021,4,Papelaria e Escritório,1
+2021,4,"Roupas, Calçados e Acessórios",1
+2021,5,Brinquedos e Jogos,1
+2021,5,Livros,1
+2021,5,"Roupas, Calçados e Acessórios",1
+2021,6,Automotivo,2
+2021,6,"Bolsas, Malas e Mochilas",1
+2021,6,Brinquedos e Jogos,2
+2021,6,Celulares e Comunicação,1
+2021,6,Cozinha,2
+2021,6,"Eletrônicos, TV e Áudio",2
+2021,6,Livros,2
+2021,6,Papelaria e Escritório,2
+2021,7,"Bolsas, Malas e Mochilas",2
+2021,7,Brinquedos e Jogos,1
+2021,7,Celulares e Comunicação,2
+2021,7,Cozinha,1
+2021,7,"Esportes, Aventura e Lazer",2
+2021,7,Livros,1
+2021,7,"Roupas, Calçados e Acessórios",1
+2021,8,Automotivo,2
+2021,8,"Bolsas, Malas e Mochilas",1
+2021,8,Brinquedos e Jogos,2
+2021,8,"Eletrônicos, TV e Áudio",2
+2021,8,"Esportes, Aventura e Lazer",2
+2021,8,"Roupas, Calçados e Acessórios",1
+2021,9,Automotivo,2
+2021,9,"Bolsas, Malas e Mochilas",1
+2021,9,Celulares e Comunicação,1
+2021,9,Cozinha,1
+2021,9,"Eletrônicos, TV e Áudio",6
+2021,9,"Esportes, Aventura e Lazer",3
+2021,9,"Roupas, Calçados e Acessórios",1
+2021,10,Livros,1
+2021,11,Automotivo,2
+2021,11,Brinquedos e Jogos,2
+2021,11,Celulares e Comunicação,3
+2021,11,Cozinha,2
+2021,11,"Eletrônicos, TV e Áudio",1
+2021,11,"Esportes, Aventura e Lazer",5
+2021,11,Livros,1
+2021,11,Papelaria e Escritório,2
+2021,12,Automotivo,2
+2021,12,"Bolsas, Malas e Mochilas",3
+2021,12,Celulares e Comunicação,1
+2021,12,"Esportes, Aventura e Lazer",1
+2021,12,Livros,2
+2021,12,Papelaria e Escritório,1
+2021,12,"Roupas, Calçados e Acessórios",1
+2022,1,"Eletrônicos, TV e Áudio",2
+2022,1,"Esportes, Aventura e Lazer",1
+2022,1,Livros,1
+2022,2,"Bolsas, Malas e Mochilas",2
+2022,2,Cozinha,1
+2022,2,Livros,1
+2022,2,Papelaria e Escritório,1
+2022,3,Automotivo,1
+2022,3,Brinquedos e Jogos,1
+2022,3,Celulares e Comunicação,1
+2022,3,"Eletrônicos, TV e Áudio",1
+2022,3,Livros,1
+2022,3,Papelaria e Escritório,1
+2022,3,"Roupas, Calçados e Acessórios",2
+2022,4,Brinquedos e Jogos,2
+2022,4,"Eletrônicos, TV e Áudio",1
+2022,4,"Esportes, Aventura e Lazer",1
+2022,4,Papelaria e Escritório,1
+2022,5,Automotivo,3
+2022,5,"Bolsas, Malas e Mochilas",3
+2022,5,Brinquedos e Jogos,1
+2022,5,Celulares e Comunicação,1
+2022,5,Cozinha,2
+2022,5,"Esportes, Aventura e Lazer",1
+2022,5,Livros,3
+2022,5,Papelaria e Escritório,2
+2022,5,"Roupas, Calçados e Acessórios",1
+2022,6,Celulares e Comunicação,1
+2022,7,Automotivo,1
+2022,7,"Bolsas, Malas e Mochilas",1
+2022,7,Brinquedos e Jogos,2
+2022,7,Celulares e Comunicação,2
+2022,7,Cozinha,3
+2022,7,"Eletrônicos, TV e Áudio",2
+2022,7,"Esportes, Aventura e Lazer",1
+2022,7,Papelaria e Escritório,1
+2022,8,Automotivo,1
+2022,8,Brinquedos e Jogos,1
+2022,8,Celulares e Comunicação,1
+2022,8,Cozinha,2
+2022,8,Livros,2
+2022,8,Papelaria e Escritório,1
+2022,8,"Roupas, Calçados e Acessórios",1
+2022,9,Automotivo,3
+2022,9,Celulares e Comunicação,2
+2022,9,Livros,2
+2022,9,Papelaria e Escritório,1
+2022,9,"Roupas, Calçados e Acessórios",1
+2022,10,"Eletrônicos, TV e Áudio",1
+2022,11,Automotivo,1
+2022,11,Brinquedos e Jogos,2
+2022,11,Celulares e Comunicação,1
+2022,11,Cozinha,2
+2022,11,"Eletrônicos, TV e Áudio",1
+2022,11,Livros,1
+2022,11,"Roupas, Calçados e Acessórios",1
+2022,12,Automotivo,1
+2022,12,"Eletrônicos, TV e Áudio",2
+2022,12,Livros,2
+2022,12,"Roupas, Calçados e Acessórios",2
+2023,1,Automotivo,1
+2023,1,"Bolsas, Malas e Mochilas",1
+2023,1,Celulares e Comunicação,1
+2023,1,Cozinha,1
+2023,1,"Eletrônicos, TV e Áudio",1
+2023,1,Livros,1
+2023,1,Papelaria e Escritório,1
+2023,1,"Roupas, Calçados e Acessórios",2
+2023,2,Automotivo,1
+2023,2,"Bolsas, Malas e Mochilas",2
+2023,2,Brinquedos e Jogos,1
+2023,2,Celulares e Comunicação,1
+2023,2,Cozinha,1
+2023,2,"Eletrônicos, TV e Áudio",1
+2023,2,Livros,1
+2023,2,Papelaria e Escritório,1
+2023,3,Celulares e Comunicação,1
+2023,3,Livros,1
+2023,3,"Roupas, Calçados e Acessórios",2
+2023,4,Cozinha,1
+2023,4,Papelaria e Escritório,1
+2023,5,"Esportes, Aventura e Lazer",2
+2023,6,"Bolsas, Malas e Mochilas",1
+2023,6,Brinquedos e Jogos,1
+2023,6,Celulares e Comunicação,3
+2023,6,Cozinha,1
+2023,6,"Esportes, Aventura e Lazer",2
+2023,6,Livros,2
+2023,7,"Bolsas, Malas e Mochilas",1
+2023,7,Brinquedos e Jogos,1
+2023,7,Celulares e Comunicação,1
+2023,7,Cozinha,1
+2023,7,"Eletrônicos, TV e Áudio",1
+2023,7,"Esportes, Aventura e Lazer",2
+2023,7,Papelaria e Escritório,2
+2023,8,Automotivo,1
+2023,8,"Bolsas, Malas e Mochilas",1
+2023,8,Celulares e Comunicação,3
+2023,8,"Eletrônicos, TV e Áudio",1
+2023,8,"Esportes, Aventura e Lazer",2
+2023,8,Livros,3
+2023,8,Papelaria e Escritório,2
+2023,9,Automotivo,2
+2023,9,"Bolsas, Malas e Mochilas",3
+2023,9,Brinquedos e Jogos,1
+2023,9,Cozinha,1
+2023,9,"Esportes, Aventura e Lazer",1
+2023,9,Livros,2
+2023,9,"Roupas, Calçados e Acessórios",1
+2023,10,"Bolsas, Malas e Mochilas",2
+2023,10,Celulares e Comunicação,3
+2023,10,"Eletrônicos, TV e Áudio",1
+2023,10,"Esportes, Aventura e Lazer",3
+2023,10,"Roupas, Calçados e Acessórios",1
+2023,11,"Bolsas, Malas e Mochilas",1
+2023,11,Brinquedos e Jogos,1
+2023,11,Cozinha,1
+2023,11,"Esportes, Aventura e Lazer",1
+2023,11,Livros,2
+2023,12,Automotivo,2
+2023,12,Brinquedos e Jogos,1
+2023,12,Cozinha,1
+2023,12,Papelaria e Escritório,2
+2023,12,"Roupas, Calçados e Acessórios",1
+2024,1,Automotivo,2
+2024,1,"Bolsas, Malas e Mochilas",3
+2024,1,Celulares e Comunicação,1
+2024,1,Cozinha,1
+2024,1,"Eletrônicos, TV e Áudio",1
+2024,1,Livros,3
+2024,1,Papelaria e Escritório,1
+2024,2,Automotivo,1
+2024,2,Brinquedos e Jogos,1
+2024,2,Celulares e Comunicação,1
+2024,2,"Eletrônicos, TV e Áudio",2
+2024,2,"Esportes, Aventura e Lazer",1
+2024,2,Papelaria e Escritório,1
+2024,3,Celulares e Comunicação,1
+2024,3,Cozinha,1
+2024,3,"Esportes, Aventura e Lazer",1
+2024,3,"Roupas, Calçados e Acessórios",1
+2024,4,Automotivo,1
+2024,4,Livros,1
+2024,4,Papelaria e Escritório,2
+2024,5,Automotivo,4
+2024,5,"Bolsas, Malas e Mochilas",1
+2024,5,Brinquedos e Jogos,3
+2024,5,Celulares e Comunicação,2
+2024,5,Cozinha,2
+2024,5,"Eletrônicos, TV e Áudio",2
+2024,5,"Esportes, Aventura e Lazer",2
+2024,6,Cozinha,1
+2024,6,"Eletrônicos, TV e Áudio",1
+2024,6,"Roupas, Calçados e Acessórios",2
+2024,7,Automotivo,2
+2024,7,"Bolsas, Malas e Mochilas",2
+2024,7,Brinquedos e Jogos,5
+2024,7,Celulares e Comunicação,6
+2024,7,Cozinha,1
+2024,7,"Eletrônicos, TV e Áudio",4
+2024,7,"Esportes, Aventura e Lazer",3
+2024,7,Livros,3
+2024,7,Papelaria e Escritório,1
+2024,7,"Roupas, Calçados e Acessórios",1
+2024,8,Automotivo,1
+2024,8,"Bolsas, Malas e Mochilas",1
+2024,8,Brinquedos e Jogos,1
+2024,8,Celulares e Comunicação,3
+2024,8,"Eletrônicos, TV e Áudio",1
+2024,8,Livros,4
+2024,8,Papelaria e Escritório,2
+2024,8,"Roupas, Calçados e Acessórios",3
+2024,9,Automotivo,2
+2024,9,"Bolsas, Malas e Mochilas",2
+2024,9,Brinquedos e Jogos,3
+2024,9,Celulares e Comunicação,3
+2024,9,Cozinha,1
+2024,9,"Eletrônicos, TV e Áudio",2
+2024,9,Livros,2
+2024,9,Papelaria e Escritório,3
+2024,10,"Bolsas, Malas e Mochilas",1
+2024,10,Brinquedos e Jogos,2
+2024,10,Celulares e Comunicação,2
+2024,10,Cozinha,1
+2024,10,"Eletrônicos, TV e Áudio",2
+2024,10,"Esportes, Aventura e Lazer",1
+2024,10,Livros,2
+2024,10,Papelaria e Escritório,1
+2024,10,"Roupas, Calçados e Acessórios",1
+2024,11,Automotivo,1
+2024,11,"Bolsas, Malas e Mochilas",1
+2024,11,Brinquedos e Jogos,2
+2024,11,Celulares e Comunicação,2
+2024,11,Cozinha,1
+2024,11,"Esportes, Aventura e Lazer",4
+2024,11,Livros,2
+2024,11,Papelaria e Escritório,1
+2024,12,"Bolsas, Malas e Mochilas",1
+2024,12,"Esportes, Aventura e Lazer",1
+2024,12,Livros,1
+2024,12,Papelaria e Escritório,3
