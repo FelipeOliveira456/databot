@@ -1,14 +1,14 @@
 [
   {
-    "question": "Quais são os dias da semana com maior e menor volume de vendas?",
+    "question": "Quais são os dias da semana com maior e menor volume de vendas? Apresente um gráfico de setores",
     "csv": "1.csv"
   },
   {
-    "question": "Quais horários do dia concentram mais vendas? Existem padrões de pico?",
+    "question": "Quais horários do dia concentram mais vendas? Apresente um gráfico de barras",
     "csv": "2.csv"
   },
   {
-    "question": "Como o faturamento evoluiu ao longo dos anos? Existem tendências de crescimento ou queda?",
+    "question": "Como o faturamento evoluiu ao longo dos anos? Apresente um gráfico de barras",
     "csv": "3.csv"
   },
   {
@@ -20,7 +20,7 @@
     "csv": "5.csv"
   },
   {
-    "question": "Quais grupos de produtos vendem mais em cada mês e ano? Há mudanças sazonais entre categorias?",
+    "question": "Quais grupos de produtos vendem mais em cada mês e ano? Apresente um gráfico de setores",
     "csv": "6.csv"
   },
   {

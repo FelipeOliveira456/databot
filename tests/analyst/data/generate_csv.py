@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import pandas as pd
-from chatbot.sql.connection import get_db
+from databot.sql.connection import get_db
 import os
 
 def save_df_to_csv(df: pd.DataFrame, n: int) -> str:

@@ -1,5 +1,5 @@
 [project]
-name = "chatbot"
+name = "databot"
 version = "0.1.0"
 description = "Pacote Python para análise de dados de vendas e geração de gráficos SQL usando LangGraph e LLM."
 authors = [
@@ -30,7 +30,8 @@ dependencies = [
     "langsmith>=0.3.35",
     "ollama>=0.4.8",
     "pypandoc>=1.11",  
-    "pyppeteer>=2.0.0"
+    "pyppeteer>=2.0.0",
+    "streamlit>=1.49.1"
 ]
 
 [build-system]

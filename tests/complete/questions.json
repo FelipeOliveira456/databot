@@ -1,0 +1,15 @@
+[
+  "Mostre a venda mensal no ano de 2022 em apenas um gráfico de barras.",
+  "Mostre o faturamento anual em apenas um gráfico de barras.",
+  "Mostre o valor da venda por dia da semana em apenas um gráfico de setores.",
+  "Mostre o valor da venda por hora em apenas um gráfico de barras.",
+  "Mostre o valor da venda por grupo de produtos em apenas um gráfico de setores.",
+  "Mostre o valor das vendas dos top 10 produtos mais vendidos em apenas um gráfico de barras.",
+  "Mostre o valor da venda por forma de pagamento em apenas um gráfico de setores.",
+  "Mostre o valor das vendas dos top 10 clientes com mais vendas em apenas um gráfico de barras.",
+  "Mostre o valor da venda por segmento de clientes em apenas um gráfico de setores.",
+  "Mostre o valor da venda por canal de venda em apenas um gráfico de setores.",
+  "Mostre o valor da venda por marketplace em apenas um gráfico de setores.",
+  "Mostre o valor das vendas dos top 10 vendedores em apenas um gráfico de barras.",
+  "Mostre o valor da venda por estado em apenas um gráfico de setores."
+]

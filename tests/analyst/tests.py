@@ -1,4 +1,4 @@
-from chatbot.graph.subgraphs.analysis.workflow import create_analysis_graph
+from databot.graph.subgraphs.analysis.workflow import create_analysis_graph
 import json
 from pathlib import Path
 import pandas as pd

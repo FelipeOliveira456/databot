@@ -25,7 +25,7 @@
     "difficulty": "facil"
   },
   {
-    "question": "Quantas vendas foram feitas por vendedor?",
+    "question": "Quantas vendas foram feitas por vendedor? Agrupe através de seu nome",
     "answer": "SELECT v.nomeVendedor, COUNT(*) AS total_vendas FROM PedidoVenda pv JOIN Vendedor v ON pv.IdVendedor = v.IdVendedor GROUP BY v.nomeVendedor;",
     "difficulty": "facil"
   },
@@ -85,7 +85,7 @@
     "difficulty": "dificil"
   },
   {
-    "question": "Quais os vendedores que nunca venderam em RJ?",
+    "question": "Quais os nomes dos vendedores que nunca venderam em RJ?",
     "answer": "SELECT v.idVendedor, v.nomeVendedor FROM Vendedor v WHERE v.idVendedor NOT IN (     SELECT DISTINCT pv.idVendedor     FROM PedidoVenda pv     JOIN Cliente c ON pv.idCliente = c.idCliente     WHERE c.estado = 'RJ' );",
     "difficulty": "dificil"
   },

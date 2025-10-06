@@ -2,7 +2,7 @@ import json
 import re
 from pathlib import Path
 
-from chatbot.agents.chatbot import get_task_agent
+from databot.agents.databot import get_task_agent
 from llm import get_task_evaluator_agent_simple  
 
 questions_path = Path("questions.json")
@@ -71,7 +71,9 @@ for i in range(5):
             try:
                 eval = int(eval.strip())
             except ValueError:
-                eval = 5 
+                eval = 0
+
+            eval = eval/10 
 
         result_entry = {
             "question": user_message,

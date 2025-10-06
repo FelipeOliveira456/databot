@@ -1,7 +1,7 @@
-from chatbot.graph.subgraphs.sql.workflow import create_sql_graph
+from databot.graph.subgraphs.sql.workflow import create_sql_graph
 import json
 from pathlib import Path
-from chatbot.tools.sql import query_sql_database
+from databot.tools.sql import query_sql_database
 
 current_dir = Path(__file__).parent
 questions_file = current_dir / "questions.json"
