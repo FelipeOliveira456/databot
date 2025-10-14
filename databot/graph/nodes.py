@@ -31,7 +31,6 @@ def task_node(state: SupervisorState):
     })
 
     json_str = extract_json_block(response.content)
-    print(json_str)
 
     tasks_data = json.loads(json_str)
     tasks_raw = tasks_data.get("tasks", [])
@@ -71,8 +70,6 @@ def sql_node(state: SupervisorState):
 
     response = result["messages"][-1]
     query_sql = response.content
-
-    print(query_sql)
 
     try:
         df = pd.read_sql(query_sql, db._engine)

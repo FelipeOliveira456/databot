@@ -9,8 +9,11 @@ import json
 import os
 import uuid
 import pandas as pd
+from pathlib import Path
 
-CSV_DIR = os.path.expanduser("~/Documents/databot/databot/data/csv")
+DATABOT_DIR = Path.cwd() / "databot"
+
+CSV_DIR = DATABOT_DIR / "data" / "csv"
 os.makedirs(CSV_DIR, exist_ok=True)
 
 def route_next(state: State) -> Literal["sql_graph", "analysis_graph", END]:
@@ -18,8 +21,6 @@ def route_next(state: State) -> Literal["sql_graph", "analysis_graph", END]:
     if(actual_task is None):
         return END
     subgraph = actual_task.get("subgraph", "")
-
-    print(f"Roteando para subgraph: {subgraph}")
 
     if subgraph == "sql":
         return "sql_graph"
@@ -58,5 +59,4 @@ def save_df_to_csv(df: pd.DataFrame) -> str:
     file_name = f"{uuid.uuid4().hex}.csv"
     file_path = os.path.join(CSV_DIR, file_name)
     df.to_csv(file_path, index=False)
-    print(file_path)
     return file_path

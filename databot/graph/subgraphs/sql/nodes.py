@@ -13,7 +13,7 @@ from langgraph.prebuilt import ToolNode
 from databot.schemas.schemas import (
     BaseState as State,
 )
-from databot.utils import extract_json_block
+from databot.graph.subgraphs.sql.utils import extract_sql_block
 
 def create_list_tables_tool_node() -> RunnableWithFallbacks[Any, dict]:
     return ToolNode([list_sql_database_tool])
@@ -84,7 +84,7 @@ def execute_query_node(state: State):
     content = last_message.content
 
     try:
-        query = extract_json_block(content)
+        query = extract_sql_block(content)
     except:
         return {"messages": "Erro: Não foi possível extrair uma consulta SQL da resposta. Corrija e tente novamente."}
 

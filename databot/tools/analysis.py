@@ -4,10 +4,13 @@ import pypandoc
 import seaborn as sns
 import uuid, os, copy
 import datetime
+from pathlib import Path
 from databot.graph.subgraphs.analysis.utils import convert_to_base64
 
-PLOT_DIR = os.path.expanduser("~/Documents/databot/databot/data/plots")
-PDF_DIR = os.path.expanduser("~/Documents/databot/databot/data/pdf")
+DATABOT_DIR = Path.cwd() / "databot"
+
+PLOT_DIR =  DATABOT_DIR / "data" / "img"
+PDF_DIR = DATABOT_DIR / "data" / "pdf"
 os.makedirs(PLOT_DIR, exist_ok=True)
 os.makedirs(PDF_DIR, exist_ok=True)
 
