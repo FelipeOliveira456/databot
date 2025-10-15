@@ -3,11 +3,13 @@ import re
 from pathlib import Path
 
 from databot.agents.databot import get_task_agent
-from llm import get_task_evaluator_agent_simple  
+from llm import get_task_evaluator_agent_simple 
 
-questions_path = Path("questions.json")
-results_path = Path("results.json")
-accuracy_path = Path("accuracy.json")
+current_dir = Path(__file__).parent
+
+questions_path = current_dir / "questions.json"
+results_path = current_dir / "results.json"
+accuracy_path = current_dir / "accuracy.json"
 
 task_agent = get_task_agent()
 evaluator_agent = get_task_evaluator_agent_simple()

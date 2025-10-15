@@ -125,7 +125,7 @@
     "tasks": [
       {
         "subgraph": "END",
-        "description": "Encerrar pois a solicitação é ilegível."
+        "description": "O seu pedido é vago ou ilegível. Por favor, reformule com mais detalhes para que possamos ajudar."
       }
     ]
   },
@@ -135,7 +135,7 @@
     "tasks": [
       {
         "subgraph": "END",
-        "description": "Encerrar pois a solicitação não está relacionada com vendas."
+        "description": "O seu pedido não parece se enquadrar no escopo de vendas. Por favor, faça um pedido relacionado a vendas."
       }
     ]
   },
@@ -145,8 +145,9 @@
     "tasks": [
       {
         "subgraph": "END",
-        "description": "Encerrar pois a solicitação está incompleta."
+        "description": "O seu pedido está incompleto ou vago. Por favor, forneça mais detalhes para que possamos gerar a análise correta."
       }
     ]
   }
 ]
+
