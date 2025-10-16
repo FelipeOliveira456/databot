@@ -1,6 +1,8 @@
 # Databot
 
-Pacote Python para análise de dados de vendas, geração de gráficos SQL e visualização de grafos usando LangGraph e Ollama.  
+Pacote Python para recuperação e análise de dados de vendas, com suporte à visualização de grafos.
+Funciona como um agente com aplicativo web, desenvolvido com Streamlit, Ollama e LangGraph/LangChain, permitindo consultas e análises interativas.
+Utiliza Pandas para manipulação de dados e Matplotlib e Seaborn para geração de gráficos detalhados. 
 
 ![Demonstração](assets/web.gif)
 
