@@ -41,6 +41,7 @@ for i, question in enumerate(questions_data, start=1):
         img_plots = result.get("plots", [])
         for j, plot in enumerate(img_plots):
             img_path = img_dir / f"{i}.{j}.png"
+            print(plot["path"])
             shutil.move(str(plot["path"]), str(img_path))
 
     except Exception as e:

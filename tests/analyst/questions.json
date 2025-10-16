@@ -1,14 +1,14 @@
 [
   {
-    "question": "Quais são os dias da semana com maior e menor volume de vendas? Apresente um gráfico de setores",
+    "question": "Quais são os dias da semana com maior e menor volume de vendas?",
     "csv": "1.csv"
   },
   {
-    "question": "Quais horários do dia concentram mais vendas? Apresente um gráfico de barras",
+    "question": "Quais horários do dia concentram mais vendas?",
     "csv": "2.csv"
   },
   {
-    "question": "Como o faturamento evoluiu ao longo dos anos? Apresente um gráfico de barras",
+    "question": "Como o faturamento evoluiu ao longo dos anos?",
     "csv": "3.csv"
   },
   {
@@ -16,19 +16,19 @@
     "csv": "4.csv"
   },
   {
-    "question": "Como o faturamento variou mês a mês em 2023? Há sazonalidade evidente?",
+    "question": "Como o faturamento variou mês a mês em 2023?",
     "csv": "5.csv"
   },
   {
-    "question": "Quais grupos de produtos vendem mais em cada mês e ano? Apresente um gráfico de setores",
+    "question": "Quais grupos de produtos vendem mais em cada mês e ano?",
     "csv": "6.csv"
   },
   {
-    "question": "Como as vendas anuais se distribuem entre os diferentes marketplaces? Analise tendências, identifique quais marketplaces se destacam e possíveis variações ano a ano.",    
+    "question": "Como as vendas anuais se distribuem entre os diferentes marketplaces?",
     "csv": "7.csv"
   },
   {
-    "question": "Como se distribuíram as vendas por estado mês a mês no ano de 2020? Analise padrões regionais, identifique estados com maior ou menor volume de vendas e possíveis tendências sazonais.",
+    "question": "Como se distribuíram as vendas por estado mês a mês no ano de 2020?",
     "csv": "8.csv"
   }
 ]

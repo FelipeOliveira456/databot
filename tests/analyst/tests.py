@@ -11,6 +11,10 @@ csv_dir = current_dir / "data/csv"
 pdf_dir = current_dir / "data/pdf"
 img_dir = current_dir / "data/img"
 
+csv_dir.mkdir(parents=True, exist_ok=True)
+pdf_dir.mkdir(parents=True, exist_ok=True)
+img_dir.mkdir(parents=True, exist_ok=True)
+
 with open(questions_file, "r", encoding="utf-8") as f:
     questions_data = json.load(f)
 
@@ -19,7 +23,7 @@ app = create_analysis_graph()
 results = []
 
 for question in questions_data:
-    q = question["pergunta"]
+    q = question["question"]
     csv_name = question["csv"]
     csv_path = csv_dir / csv_name
     df = pd.read_csv(csv_path)
