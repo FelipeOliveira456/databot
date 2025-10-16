@@ -2,7 +2,10 @@
 
 Pacote Python para análise de dados de vendas, geração de gráficos SQL e visualização de grafos usando LangGraph e Ollama.  
 
+![Demonstração](assets/web.gif)
+
 ---
+
 
 ## 🚀 Funcionalidades principais
 
@@ -25,7 +28,7 @@ Pacote Python para análise de dados de vendas, geração de gráficos SQL e vis
 1. **Clone o repositório**:
 
 ```bash
-git clone https://github.com/seu-usuario/databot.git
+git clone https://github.com/FelipeOliveira456/databot.git
 cd databot
 ```
 
